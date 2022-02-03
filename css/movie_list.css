@@ -29,17 +29,6 @@ img {
   vertical-align: middle;
 }
 
-table {
-  border-collapse: collapse;
-}
-
-.mwidth {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .inner {
   width: 1100px;
   margin: 0 auto;

@@ -1,85 +1,31 @@
-@font-face {
-  font-family: 'NanumBarunGothic';
-  font-style: normal;
-  font-weight: 400;
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'NanumBarunGothic';
-  font-style: normal;
-  font-weight: 700;
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'NanumBarunGothic';
-  font-style: normal;
-  font-weight: 300;
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
-  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf") format("truetype");
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
   font-family: 'NanumBarunGothic', sans-serif;
-  font-size: 15px;
-  letter-spacing: 0;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-
-*::before, *::after {
-  border-spacing: 0;
-}
-
-html, body, header, main, footer,
-h1, h2, h3, h4, h5, h6, figure,
-div, span, p, a, input, dl, dt, dd {
   margin: 0;
-  padding: 0;
+  overflow-x: hidden;
+  font-weight: 400;
 }
 
-img, video, iframe {
-  /*     width: 100%; height: auto;  */
+h1, h2, h3, h4, h5, h6, figure, p {
   margin: 0;
-  padding: 0;
-  vertical-align: middle;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
-ol, ul, li {
-  margin: 0;
+ul, li {
+  list-style: none;
   padding: 0;
-  list-style-type: none;
+  margin: 0;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input, button {
-  border: none;
-  background: none;
-}
-
-input:focus, button:focus {
-  outline: none;
-}
-
-.mwidth {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
+img {
+  vertical-align: middle;
 }
 
 .calendarSwiper {

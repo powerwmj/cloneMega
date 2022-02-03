@@ -30,10 +30,6 @@ img {
   vertical-align: middle;
 }
 
-table {
-  border-collapse: collapse;
-}
-
 @font-face {
   font-family: 'NanumGothic';
   src: url("../fonts/NanumGothic.eot");
