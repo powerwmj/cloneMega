@@ -268,4 +268,8 @@ header .menu-right .search.active img {
   margin-top: 4px;
   margin-left: 8px;
 }
+
+main {
+  position: relative;
+}
 /*# sourceMappingURL=index.css.map */
