@@ -1,7 +1,2 @@
-//header
-// window.onload=function(){
-//     const elBurger = document.querySelector('.bugermenu');
-//     console.log(elBurger);
-// }
 // main page
-
+// 여기는 작업하지 마시고 새로 js파일 만들어서 작업해주세요~
