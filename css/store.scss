@@ -1,0 +1,177 @@
+@import '_common';
+
+.inner {width: 1140px; margin: 0 auto; padding: 0 20px; position: relative;}
+.container {
+    width: 100%; margin: 0 auto; position: relative;
+    .gnb {
+        width: 100%; height: 42px; background: #f8f8fa;
+        .location {
+            width: 100%; height: 42px;
+            a {
+                color: #666; margin-left: 25px; line-height: 42px; position: relative;
+                &:hover {text-decoration: underline;}
+                &::before {content: ''; display: block; position: absolute; left: -14px; top: -12px; width: 5px; height: 42px; background: url('../img/store/bg-location-arr.png') no-repeat left center;}
+            }
+        }
+        .sns {
+            position: absolute; top: 12px; right: 0;
+            a {display: block; height: 22px; color: #666; font-size: 15px; line-height: 22px;}
+            a::after {content: url('../img/store/sns_link.png'); display: inline-block; padding-left: 10px; vertical-align: sub;}
+            .sns-share {display: none; position: absolute; right: 0; top: 42px; z-index: 55; width: 360px; height: 110px; padding: 20px 0 0 0; border: 1px solid #d8d9db; border-radius: 5px; background-color: #fff;}
+            .sns-share::before {content: ''; position: absolute; right: 34px; top: -12px; display: block; width: 22px; height: 12px; background: url('../img/store/bg-tooltip-arr-top-script.png') no-repeat 0 0;}
+            .sns-share .btn_w {text-align: center;}
+            .sns-share .btn_w .btn-sns {display: inline-block; min-width: 50px; margin: 0 4px; padding-top: 48px; border: 0; font-size: .9333em; color: #444; line-height: 1.1; background-color: transparent;}
+            .sns-share .btn_w .face {background: url('../img/store/btn-sns-share-face.png') center top no-repeat;}
+            .sns-share .btn_w .band {background: url('../img/store/btn-sns-share-band.png') center top no-repeat;}
+            .sns-share .btn_w .twit {background: url('../img/store/btn-sns-share-twitter.png') center top no-repeat;}
+            .sns-share .btn_w .link {background: url('../img/store/btn-sns-share-link.png') center top no-repeat;}
+        }
+    }
+    .content_w {
+        width: 100%; padding: 40px 0 0 0;
+        h2 {padding-bottom: 26px; font-size: 1.8666em; letter-spacing: -1px; line-height: 1.1; font-family: 'NanumBarunGothic', sans-serif; font-weight: 400;}
+        h3 {padding-bottom: 16px; font-size: 1.6em; font-weight: 400; color: #503396; line-height: 1.1;}
+        .tab {
+            ul {display: flex; width: 100%; height: 42px;}
+            ul li {
+                width: 25%; height: 100%; border: 1px solid #ebebeb; border-bottom: 1px solid #503396; border-width: 1px 0 1px 1px; text-align: center;
+                a {font-size: 1.0667em; color: #222; height: 41px; line-height: 40px;}
+            }
+            ul li:last-child {border-right: 1px solid #ebebeb; position: relative;}
+            ul li:last-child::after {content: ''; display: block; width: 38px; height: 30px; position: absolute; top: 5px; right: 60px; background: url('../img/store/pointmall_tag.gif'); background-size: 100%;}
+            ul li.on {border: 1px solid #503396; border-bottom: 0;}
+        }
+        // list
+        .product {
+            margin-top: 12px;
+            .best {
+                height: 280px;
+                a {color: inherit; position: relative; display: inline-block; padding-right: 285px; height: 100%;}
+                .slogun {padding-top: 36px; font-size: 2.1333em; line-height: 1.1;}
+                .slogun p {color: #503396;}
+                .slogun p span {color: #01738b; display: block;}
+                .goods {padding-top: 30px;}
+                .goods .name {font-size: 1.2em; color: #222;}
+                .goods .txt {height: 45px; overflow: hidden;}
+                .img {position: absolute; top: 0; right: 0;}
+                &::after {content: ''; display: block;}
+            }
+            .goods-tit {
+                position: relative; margin: 75px 0 15px 0;
+                h3 {padding: 0 0 16px 0; font-size: 1.6em; font-weight: 400; color: #503396;}
+                .more {position: absolute; right: 0; top: 10px;}
+                .more a {color: #444; font-size: 15px;}
+                .more a::after {content: url('../img/store/ico-arr-right-gray.png'); display: inline-block; padding-left: 10px;}
+            }
+            .store-list {
+                ul {display: flex; justify-content: flex-start;}
+                ul li {width: 290px; border: 1px solid #e4e4e4; border-radius: 10px; margin-right: 40px;}
+                ul li:hover {border: 1px solid #503396;}
+                ul li:nth-of-type(4) {margin-right: 0;}
+                ul li a {position: relative; height: 485px; display: block;}
+                ul li .label {position: absolute; top: 0; left: 0; overflow: hidden; height: 24px; padding: 0 10px; line-height: 27px; color: #fff; font-size: .8667em; z-index: 1; border-radius: 10px 0 0 0;}
+                ul li .event {background: #ed4c57;}
+                ul li .hot {background: #000;}
+                ul li .sold {display: block; position: absolute; top: -1px; left: -1px; right: -1px; z-index: 10; height: 245px; line-height: 245px; color: #fff; font-size: 1.6em; text-align: center; border-radius: 10px 10px 0 0; background-color: rgba(0,0,0,.7);}
+                ul li .img {width: 100%; border-radius: 10px 10px 0 0; background: #eee;}
+                ul li .img img {width: 100%; border-radius: 10px 10px 0 0;}
+                ul li .info {padding: 0 19px; border-top: 1px solid #e4e4e4; line-height: 1.3;}
+                ul li .info .tit {padding-top: 20px; height: 115px; border-bottom: 1px solid #d4d4d4;}
+                ul li .info .tit .name {overflow: hidden; height: 39px; margin-bottom: 10px; color: #222; font-weight: 700;}
+                ul li .info .tit .bundle {font-size: .8667em; color: #666;}
+                ul li .info .price {position: relative; padding: 35px 0 0 0; line-height: 1.1;}
+                ul li .info .price .original {position: absolute; left: 0; top: 15px; color: #666; text-decoration: line-through;}
+                ul li .info .price .sale {color: #503396;}
+                ul li .info .price .sale em {font-size: 1.6em; font-weight: 400; vertical-align: middle; font-style: normal;}
+                ul li .info .price .sale span {font-size: 1.3333em; vertical-align: middle;}
+                ul li .info .price .ea {position: absolute; right: 0; bottom: 4px; color: #666;}
+            }
+        }
+        //view
+        .store-view {
+            h2 {font-size: 1.8666em; padding-bottom: 5px; font-weight: 400; color: #222;}
+            .sub-info {display: flex; justify-content: space-between; font-size: 15px; color: #222; line-height: 1.5;}
+            .sub-info p.date span {color: #01738b;}
+            .box-view {overflow: hidden; position: relative; margin-top: 10px; border-top: 1px solid #555; border-bottom: 1px solid #d8d9db; display: flex;}
+            .box-view .img {width: 480px; padding-bottom: 30px; position: relative; display: table;}
+            .box-view .img::after {content: ''; width: 1px; height: 480px; background: #d8d9db; position: absolute; top: 0; right: 0;}
+            .box-view .img p {display: table-cell; height: 400px; vertical-align: middle; text-align: center;}
+            .box-view .info {width: calc(100% - 480px); padding: 20px 0 25px 40px;}
+            .box-view .info dl {width: 100%; display: flex; flex-wrap: wrap; margin: 0; border-bottom: 1px solid #d8d9db; padding-bottom: 15px;}
+            .box-view .info dt {width: 100px; padding-top: 15px; color: #222; font-size: 15px; vertical-align: top; height: 47px;}
+            .box-view .info dd {margin: 0; width: 85%; padding-top: 15px; color: #444; font-size: 15px; vertical-align: top; line-height: 1.5;}
+            .box-view .info dd a {color: #01738b; text-decoration: underline;}
+            .box-view .info dd span.gray {display: block; font-size: 14px; color: #ccc;}
+            .box-view .info dd span.deepgreen {color: #01738b;}
+            .box-view .info .price {padding: 25px 0; display: flex; border-bottom: 1px solid #d8d9db;}
+            .box-view .info .price p {font-size: 15px; color: #222; width: 100px; padding-top: 10px;}
+            .box-view .info .price .cont {width: calc(100% - 100px);}
+            .box-view .info .price .cont::after {content: ''; display: block; clear: both;}
+            .box-view .info .price .cont button {display: block; float: left; width: 32px; height: 32px; margin: 0; padding: 0; border: 1px solid #ccc; background-color: #fff;}
+            .box-view .info .price .cont input {display: block; float: left; width: 42px; height: 32px; color: #aaa; background: #f7f8f9; margin: 0; padding: 0; border: 1px solid #ccc; border-left: 0; border-right: 0; text-align: center;}
+            .box-view .info .price .cont .money {float: right;}
+            .box-view .info .price .cont .money em {font-style: normal; font-size: 2em; color: #351f66; line-height: 32px;}
+            .box-view .info .price .cont .money span {font-size: 1.3333em; color: #351f66; padding-left: 3px;}
+            .box-view .info .btn_w {width: 100%; padding-top: 20px;}
+            .box-view .info .btn_w a {text-align: center; height: 46px; line-height: 44px; border-radius: 4px; font-size: 15px;}
+            .box-view .info .btn_w .line {display: block; float: left; width: calc(50% - 5px); margin: 0; border: 1px solid #503396; color: #503396;}
+            .box-view .info .btn_w .fill {display: block; float: right; width: calc(50% - 5px); margin: 0; border: 1px solid #503396; background: #503396; color: #fff;}
+
+            .box-detail {width: 100%; padding: 40px 0 20px 0;}
+            .box-detail .cont_w .tit {margin-bottom: 20px;}
+            .box-detail .cont_w .tit button {width: 100%; height: 39px; border-radius: 4px; padding: 0 20px; text-align: left; background: #fff; border: 1px solid #d8d9db; font-size: 1em; line-height: 1.15; position: relative; cursor: pointer;}
+            .box-detail .cont_w .tit button::after {content: ''; display: block; position: absolute; background: url('../img/store/ico-arr-toggle-down.png'); width: 12px; height: 7px; top: 15px; right: 20px;}
+            .box-detail .cont_w .tit.on button {background: #f3f4f6; border: 1px solid #f3f4f6;}
+            .box-detail .cont_w .tit.on button::after {transform: rotate(180deg);}
+            .box-detail .cont_w .cont {padding: 20px; font-size: 15px; line-height: 1.5; color: #444; display: none;}
+            .box-detail .cont_w .cont ul li {font-size: .9333em; padding: 0 0 16px 12px; position: relative;}
+            .box-detail .cont_w .cont ul li::before {content: ''; display: block; position: absolute; top: 7px; left: 0; background-color: #57a5ae; width: 4px; height: 4px; border-radius: 50%;}
+        }
+
+        //payment
+        .payment {
+            table {
+                width: 100%;
+                caption {display: none;}
+                th {height: 45px; padding: 3px 10px; color: #222; background: #f2f4f5; border-top: 1px solid #555; border-bottom: 1px solid #eaeaea;}
+                td {text-align: center; font-size: 15px; color: #444; border-bottom: 1px solid #eaeaea;}
+                td:nth-of-type(1) {text-align: left;}
+                td .goods-info {height: 100px;}
+                td .goods-info div {height: 100%; display: inline-block; padding: 10px;}
+                td .goods-info div img {height: 100%;}
+                td .goods-info .goods .tit {color: #444; font-size: 1.2em; display: block; padding-bottom: 10px;}
+                td .goods-info .goods .bundle {font-size: 15px; line-height: 1.3; color: #444;}
+                td a.use {color: #01738D;}
+                td .price {font-size: 15px; color: #444;}
+                td .price span {margin-right: 4px; color: #503396; font-weight: 700; font-size: 1.4666em; vertical-align: middle;}
+                
+            }
+        }
+
+        .pay-final {
+            width: 100%; border-radius: 10px; background: #333; padding: 30px; 
+            .calc {
+                text-align: center;
+                .cell {display: inline-block; font-size: 1.0667em; color: #fff; font-weight: 400; width: 180px;}
+                .cell .txt {color: #c4c4c4; font-size: 15px; line-height: 1.5; display: block; padding-bottom: 5px;}
+                .cell .price {font-size: 1.6em; line-height: 24px; color: #fff; font-weight: 700; display: inline-block;}
+                .cell .price_fin {font-size: 1.6em; line-height: 24px; color: #339eb2; font-weight: 700; display: inline-block;}
+                .circle {display: inline-block;}
+            }
+            hr {margin: 20px 0; background: #434343; height: 1px; border: 0;}
+            .inbox {text-align: center; color: #fff;}
+            .inbox .ch {color: #c4c4c4; padding-right: 20px;}
+            .inbox .choice {padding: 0 20px;}
+            .inbox .choice select {height: 28px; font-size: 14px; border-radius: 4px;}
+        }
+        .btn_w {
+            padding: 40px 0 30px 0; text-align: center;
+            .line {display: inline-block; width: 170px; height: 46px; line-height: 46px; margin: 0 4px; border-radius: 4px; border: 1px solid #503396; color: #503396;}
+            .fill {display: inline-block; width: 170px; height: 46px; line-height: 46px; margin: 0 4px; border-radius: 4px; border: 1px solid #503396; background: #503396; color: #fff;}
+
+        }
+    }
+}
+
+.mt-20 {margin-top: 20px;}
+.mt-40 {margin-top: 40px;}
