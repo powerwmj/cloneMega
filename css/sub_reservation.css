@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+*::before, *::after {
+  border-spacing: 0;
+}
+
+html, body, header, main, footer,
+h1, h2, h3, h4, h5, h6, figure,
+div, span, p, a, input, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+img, video, iframe {
+  /*     width: 100%; height: auto;  */
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, button {
+  border: none;
+  background: none;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+.mwidth {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.allbtn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #555;
+  font-size: 16px;
+  border-bottom: none;
+}
+
+.view {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.view .choice {
+  padding: 12px 0;
+  border: 1px solid #d8d9db;
+  text-align: center;
+  height: 80px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+main .contentbox {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 40px 0 100px;
+}
+
+main .contentbox .q_reserve h2 {
+  padding-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+main .contentbox .q_reserve .calenderbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #555;
+  border-left: 1px solid #d8d9db;
+  border-right: 1px solid #d8d9db;
+}
+
+main .contentbox .q_reserve .calenderbox .calenderico {
+  border-left: 1px solid #d8d9db;
+  width: 40px;
+  margin-left: 10px;
+  padding: 0 6px;
+}
+
+main .contentbox .q_reserve .calenderbox .calenderico .calenderbtn {
+  background: url(../img/sub_reservation/ico-calendar-w20.png) no-repeat center;
+  height: 30px;
+  width: 30px;
+  -webkit-transform: translate(-5%, 5%);
+          transform: translate(-5%, 5%);
+}
+
+main .contentbox .q_reserve .reservebox {
+  border: 1px solid #d8d9db;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .contentbox .q_reserve .reservebox .movie_choice {
+  padding: 0 20px 20px 20px;
+  border-right: 1px solid #d8d9db;
+  width: 25%;
+  height: 600px;
+}
+
+main .contentbox .q_reserve .reservebox .cinema_choice {
+  border-right: 1px solid #d8d9db;
+  padding: 0 20px 20px 20px;
+  width: 35%;
+}
+
+main .contentbox .q_reserve .reservebox .cinema_choice .chinema_list ul {
+  text-align: left;
+}
+
+main .contentbox .q_reserve .reservebox .cinema_choice .chinema_list ul li button {
+  padding: 3px 10px;
+}
+
+main .contentbox .q_reserve .reservebox .cinema_choice .chinema_list ul li button span {
+  font-size: 13px;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice {
+  width: 40%;
+  padding: 0 20px 20px 20px;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice .titlebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice .titlebox .t_icon {
+  width: 53%;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice .titlebox .t_icon i {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice .titlebox .t_icon .sun {
+  background: url(../img/sub_reservation/ico-greeting-option-sun.png) 0 0 no-repeat;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice .titlebox .t_icon .brunch {
+  background: url(../img/sub_reservation/ico-time-brunch.png) 0 0 no-repeat;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice .titlebox .t_icon .moon {
+  background: url(../img/sub_reservation/ico-greeting-option-moon.png) 0 0 no-repeat;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice .t_choicebox {
+  text-align: center;
+  padding-top: 150px;
+  height: 100%;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice .t_choicebox i {
+  width: 46px;
+  height: 46px;
+  display: block;
+  margin: 0 auto;
+  background: url("../img/sub_reservation/ico-movie-time.png") 0 0 no-repeat;
+}
+
+main .contentbox .q_reserve .reservebox .time_choice .t_choicebox .t_txt {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #444;
+}
+/*# sourceMappingURL=sub_reservation.css.map */

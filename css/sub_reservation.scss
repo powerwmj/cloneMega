@@ -1,0 +1,125 @@
+@import '_common.scss';
+
+// choice 부분 타이틀
+.title{
+    width: 100%; height: 40px; margin: 5px 0;
+    font-size: 20px; font-weight: 400;
+    line-height: 38px;
+}
+// choice 부분 버튼
+.allbtn{
+    width: 100%; height: 40px;
+    border: 1px solid #555;
+    font-size: 16px;
+    border-bottom: none;
+}
+// choice 버튼 클릭시 이미지 띄어지는 박스
+.view{
+    width: 100%; margin-top: 10px;
+    .choice{
+        padding: 12px 0;
+        border:1px solid #d8d9db;
+        text-align: center; height: 80px;
+        font-size: 14px; font-weight: 400;
+    }
+}
+
+main{
+    .contentbox{
+        width: 1280px; margin: 0 auto;
+        padding: 40px 0 100px;
+        .q_reserve{
+            h2{
+                padding-bottom: 30px;
+                font-size: 30px; font-weight: 400;
+                letter-spacing: -1px;
+            }
+            .calenderbox{
+                display: flex; align-items: center;
+                border-top: 1px solid #555;
+                border-left: 1px solid #d8d9db;
+                border-right: 1px solid #d8d9db; 
+                .calenderico{
+                    border-left: 1px solid #d8d9db;
+                    width: 40px; margin-left: 10px; padding: 0 6px;
+                    .calenderbtn{
+                        background: url(../img/sub_reservation/ico-calendar-w20.png) no-repeat center;
+                        height: 30px; width: 30px;
+                        transform: translate(-5%,5%);
+                    }
+                }
+            }
+            .reservebox{
+                border: 1px solid #d8d9db;
+                display: flex;
+                .movie_choice{
+                    padding: 0 20px 20px 20px;
+                    border-right: 1px solid #d8d9db;
+                    width: 25%; height: 600px;
+                    .movie_list{
+                        .m_listbtn{
+                            .age{
+                                img{}
+                            }
+                            .m_txt{}
+                        }
+                    }
+                }
+                .cinema_choice{
+                    border-right: 1px solid #d8d9db;
+                    padding: 0 20px 20px 20px;
+                    width: 35%; 
+                    .chinema_list{
+                        ul{
+                            text-align: left;
+                            li{
+                                
+                                button{
+                                    padding: 3px 10px;
+                                    span{font-size: 13px;}
+                                }
+                                .depth_1{}
+                            }
+                        }
+                    }
+                }
+                .time_choice{
+                    width: 40%;
+                    padding: 0 20px 20px 20px;
+                    .titlebox{
+                        display: flex; justify-content: space-between; align-items: center;
+                        .t_icon{
+                            width: 53%;
+                            i{
+                                width: 14px; height: 14px;
+                                display: inline-block;
+                                margin-left: 5px;
+                            }
+                            .sun{
+                                background: url(../img/sub_reservation/ico-greeting-option-sun.png) 0 0 no-repeat;
+                            }
+                            .brunch{background: url(../img/sub_reservation/ico-time-brunch.png) 0 0 no-repeat;}
+                            .moon{background: url(../img/sub_reservation/ico-greeting-option-moon.png) 0 0 no-repeat;}
+                        }
+                    }
+                    .t_choicebox{
+                        text-align: center;
+                        padding-top: 150px;
+                        height: 100%;
+                        i{
+                            width: 46px; height: 46px;
+                            display: block;
+                            margin: 0 auto;
+                            background: url('../img/sub_reservation/ico-movie-time.png') 0 0 no-repeat;
+                        }
+                        .t_txt{
+                            margin-top: 10px;
+                            font-size: 15px; line-height: 1.5; font-weight: 400;
+                            color: #444;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
