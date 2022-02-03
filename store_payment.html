@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/store_payment.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="pagelocation">
+            <div class="inner">
+                <div class="location">
+                    <span>HOME</span>
+                    <a href="#" title="store">스토어</a>
+                    <a href="#" title="store">결제</a>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="inner">
+                <!-- storepayment -->
+                <div class="storepayment">
+                    <h2 class="title">결제</h2>
+                    <h3 class="title">주문상품정보</h3>
+                
+                <div class="table-w">
+                    <table class="table-box">
+                        <colgroup >
+                            <col style="width: 120px;">
+                            <col style="width: 550px;">
+                            <col style="width: 150px;">
+                            <col style="width: 80px;">
+                            <col style="width: 200px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="colgroup" colspan="2">주문상품</th>
+                                <th scope="col">사용가능처</th>
+                                <th scope="col">구매수량</th>
+                                <th scope="col">총 상품금액</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="goodsimg">
+                                    <div class="goods-info">
+                                        <p class="img">
+                                            <a href="#" title="설날패키지">
+                                                <img src="./img/kscZOkfo2ilNidOOAiljvbZZJzAaA01k_280.png" alt="goodsimg">
+                                            </a>
+                                        </p>
+                                    </div>
+                                </td>
+                                <th scope="row">
+                                    <div class="goods-info">
+                                        <p class="name">
+                                            <a href="#" title="혼영패키지">[설날] 혼영 패키지</a>
+                                        </p>
+                                        <p class="bundle">일반관람권 1매 + 팝콘R 1개 + 탄산R 1개</p>
+                                    </div>
+                                </th>
+                                <td>
+                                    <a class="a-link" href="#" title="사용가능극장 확인">
+                                        사용가능극장 확인
+                                    </a>
+                                </td>
+                                <td>
+                                    <em id="purc" class="purc">1</em>
+                                </td>
+                                <td>
+                                    <div class="goods-info">
+                                        <em id="purc" class="price">13,000</em>원
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 </div>
+                 <!-- 선물하기 선택시 열리는 창  -->
+                 <div id="giftdiv" class="giftdiv" style="display: none;">
+                     <h3 class="tit mt40">선물 메세지</h3>
+                     <div class="table-w">
+                         <table class="board-form">
+                             <!-- 선물메세지입력 -->
+                             <colgroup>
+                            <col style="width: 145px;">
+                            <col>
+                            <col style="width: 145px;">
+                            <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="get_user">받는 분</label>
+                                    </th>
+                                    <td>
+                                        <input id="get_user" class="input-text" type="text" maxlength="20" alt="받는분">
+                                    </td>
+                                    <th scope="rowgroup" rowspan="2">
+                                        <label for="present_message">
+                                            선물메세지
+                                            <br>
+                                            (
+                                                <span id="textareaCnt" class="text-count">0</span>
+                                                자/
+                                                <em class="font-gblue">
+                                                    70자
+                                                </em>
+                                            )
+                                        </label>
+                                    </th>
+                                    <td rowspan="2">
+                                        <textarea id="present_message" class="input-textarea" rows="5" cols="30" title="선물메세지 입력" placeholder="전달하고자 하는 메세지를 남겨보세요(최대 70자)" style="height:76px;">
+                                        </textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="phone">
+                                            수량/휴대폰번호
+                                        </label>
+                                    </th>
+                                    <td>
+                                        <ul class="inputui01">
+                                            <li class="li01">
+                                                <select id="get_cnt" class="w100p small" alt="수량">
+                                                    <option value="">선택</option>
+                                                    <option value="1">1</option>
+                                                </select>
+                                            </li>
+                                            <li class="li02">
+                                                <input id="phone" class="input-text numType" type="tel" placeholder="'-'없이 입력해 주세요" maxlength="11" alt="휴대폰번호">
+                                            </li>
+                                            <li>
+                                                <a id="btnAddGiftAcptpsn" class="button purple small btn-model-open" href="#">추가</a>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                         </table>
+                     </div>
+                     <div id="giftAcptPsnList" class="useraddlist"></div>
+                 </div>
+                 <!-- 선물하기 창 종료 -->
+                 <!-- 결제수단 시작 -->
+                 <h3 class="tit mt40">
+                     최종결제
+                 </h3>
+                 <!-- 결제 목록 -->
+                 <div class="payment-final">
+                    <div class="calc">
+                        <div class="cell all">
+                            <p class="txt">
+                                총 상품금액
+                            </p>
+                            <p class="price">
+                                <em id="totprdtamtView">
+                                    20,000
+                                </em>
+                                <span>원</span>
+                            </p>
+                        </div>
+                        <i class="iconset ico-circle-minus">빼기</i>
+                        <div class="cell sale">
+                            <p class="txt">
+                                할인금액
+                            </p>
+                            <p class="price">
+                                <em id="totDcAmtView">
+                                    0
+                                </em>
+                                <span>원</span>
+                            </p>
+                        </div>
+                        <i class="iconset ico-circle-equal">등호</i>
+                        <div class="cell real">
+                            <p class="txt">최종 결제금액</p>
+                            <p class="price">
+                                <em id="lstPayAmtview">
+                                    20,000
+                                </em>
+                                <span>원</span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- 결제수단선택 -->
+                    <div class="choice">
+                        <div class="inbox">
+                            <p class="txt">결제수단 선택</p>
+                            <div class="cell">
+                                <input id="radio_choice01" type="radio" name="radio_choice" value="credit">
+                                <label for="radio_choice01">신용/체크카드</label>
+                            </div>
+                            <div class="cell">
+                                <input id="radio_choice03" type="radio" name="radio_choice" value="kakaopay">
+                                <label for="radio_choice03">카카오페이</label>
+                            </div>
+                            <div class="cell">
+                                <input id="radio_choice04" type="radio" name="radio_choice" value="payco">
+                                <label for="radio_choice04">페이코</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 카드선택 -->
+                    <div class="choice ty2 sel-payment-card">
+                        <div class="inbox">
+                            <p class="txt">
+                                카드사 선택
+                            </p>
+                            <div class="cell">
+                                <select id="card_select" class="x-small selpiker" title="카드사선택">
+                                    <option value="00" selected="">
+                                        카드선택
+                                    </option>
+                                    <!-- 전체카드 -->
+                                    <option value="01">비씨카드</option>
+                                    <option value="02">신한카드</option>
+                                    <option value="03">삼성카드</option>
+                                    <option value="04">현대카드</option>
+                                    <option value="05">롯데카드</option>
+                                    <option value="07">국민카드</option>
+                                    <option value="08">수협카드</option>
+                                    <option value="09">SC제일은행 비씨카드</option>
+                                </select>
+                            </div>
+                            <!-- 카드선택시 결제방법 작업필요 -->
+                            <div class="cell p10"></div>
+                            <div class="cell"></div>
+                            <!--결제수단별 알림문구  작업필요-->
+
+
+                        </div>
+                    </div>
+                 </div>
+                 <div class="btn-group pt40">
+                     <a id="btn_store_back" class="button large w170px" href="" title="취소">취소</a>
+                     <a id="btn_store_pay_adapter" class="button purple large w170px btn_modal_open" href="#" title="결제">결제</a>
+
+                 </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>

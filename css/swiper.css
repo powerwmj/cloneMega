@@ -1,0 +1,131 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'NanumBarunGothic', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, figure, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.calendarSwiper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.calendarSwiper .swiper-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+}
+
+.calendarSwiper .swiper-wrapper .swiper-slide {
+  font-weight: 400;
+  width: 70px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.calendarSwiper .swiper-button-next {
+  background: url(../img/sub_reservation/btn-next-time.png) no-repeat center;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  padding: 0 6px;
+  display: block;
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
+}
+
+.calendarSwiper .swiper-button-next::after {
+  content: '';
+}
+
+.calendarSwiper .swiper-button-prev {
+  background: url(../img/sub_reservation/btn-prev-time.png) no-repeat center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  display: block;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  padding: 0 6px;
+}
+
+.calendarSwiper .swiper-button-prev::after {
+  content: '';
+}
+
+.timeSwiper {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #d8d9db;
+  border-bottom: 1px solid #d8d9db;
+  position: relative;
+}
+
+.timeSwiper .swiper-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  height: 30px;
+}
+
+.timeSwiper .swiper-wrapper .swiper-slide {
+  width: 25px;
+  height: 30px;
+  padding: 0;
+  font-size: 16px;
+  color: #444;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.timeSwiper .swiper-button-next {
+  background: url(../img/sub_reservation/btn-next-time.png) no-repeat center;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  display: block;
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
+}
+
+.timeSwiper .swiper-button-next::after {
+  content: '';
+}
+
+.timeSwiper .swiper-button-prev {
+  background: url(../img/sub_reservation/btn-prev-time.png) no-repeat center;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  display: block;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+}
+
+.timeSwiper .swiper-button-prev::after {
+  content: '';
+}
+/*# sourceMappingURL=swiper.css.map */

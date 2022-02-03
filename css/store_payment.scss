@@ -1,0 +1,534 @@
+@import '_common';
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+//font-family: 'Roboto', sans-serif;
+
+@font-face { font-family: 'NanumGothic';
+    src: url('../fonts/NanumGothic.eot');
+    src: url('../fonts/NanumGothic.eot') format('embedded-opentype'),
+    url('../fonts/NanumGothic.woff') format('woff');}
+    
+@font-face { font-family: 'NanumBarunGothic';
+    src: url('../fonts/NanumBarunGothic.eot');
+    src: url('../fonts/NanumBarunGothic.eot') format('embedded-opentype'),
+    url('../fonts/NanumBarunGothic.woff') format('woff');}
+
+
+.w100p {
+    width: 100% !important;
+    }
+.mt40{
+    margin-top: 40px !important;
+}    
+.pt40 {
+    padding-top: 40px !important;
+  }
+.w170px {
+width: 170px !important;}
+.button {
+    display: inline-block;
+    height: 36px;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 34px;
+    color: #503396;
+    font-weight: 400;
+    border-radius: 4px;
+    font-family: 'NanumBarunGothic','Dotum','돋움',sans-serif;
+    text-decoration: none;
+    border: 1px solid #503396;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    }  
+    
+.txt{
+    color:#c4c4c4;
+}
+
+h3.tit {
+    margin: 0;
+        margin-top: 0px;
+    padding: 0 0 16px 0;
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #503396;
+    line-height: 1.1;
+    }
+.iconset {
+    overflow: hidden;
+    display: inline-block;
+    margin: -1px 0 0 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    }
+
+body {
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #444;
+    font-weight: 400;
+    font-family: 'NanumBarunGothic','Dotum','돋움',sans-serif;
+    }  
+
+select {
+    height: 36px;
+    padding-left: 4px;
+    border-color: #ccc;
+    border-radius: 4px;
+    font-family: 'NanumBarunGothic','Dotum','돋움',sans-serif;
+  }
+button, select {
+text-transform: none;
+}  
+button, input, optgroup, select, textarea {
+margin: 0;
+font-family: inherit;
+font-size: 1em;
+line-height: 1.15;
+}
+label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    
+  }
+a{color: #444;}
+.container{
+    width: 100%;
+    min-width: 1100px;
+    margin: -92px 0 -200px 0;
+    padding: 92px 0 300px 0;
+    .pagelocation{
+        display: block;
+        position: static;
+        width: 100%;
+        height: 42px;
+        background-color: #f8f8fa;
+        .inner{
+            width: 1100px;
+            margin: 0 auto;
+            .location{
+                float: left;
+                height: 42px;
+                span{
+                    overflow: hidden;
+                    display: block;
+                    float: left;
+                    width: 13px;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    text-indent: -9999px;
+                    background: url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-home.png) no-repeat center;
+                    }
+                >a{                    
+                    color: #666;
+                    position: relative;
+                    float: left;
+                    height: 42px;
+                    margin: 0 0 0 25px;
+                    padding: 0;
+                    line-height: 46px;
+                   
+                    }
+                    a::before{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        left: -14px;
+                        top: 0px;
+                        width: 5px;
+                        height: 42px;
+                        background: url(../img/bg-location-arr.png) no-repeat left center; 
+                    }
+                   
+            }
+        }
+    }
+
+.contents{
+    width: 100%;
+    margin: 0;
+    padding: 40px 0 0 0;
+    .inner{
+        width: 1100px;
+        margin: 0 auto;
+        .storepayment{  
+            h2{
+                padding:0 0 26px 0;
+                font-size: 1.866em;
+                font-weight: 400;
+                letter-spacing: -1px;
+                color: #222;
+            } 
+            h3{
+                margin: 0;
+                padding: 0 0 16px 0;
+                font-size: 1.6em;
+                font-weight: 400;
+                color: #503396;
+                line-height: 1.1;
+            }         
+        
+        .table-w{
+            position: relative;
+                border-top:1px solid #555;
+            .table-box{
+                line-height: 1.3;
+              
+                thead{
+                    tr{
+                        th{
+                            height: 45px;
+                            padding: 3px 10px;
+                            color: #222;
+                            border: 1px solid #eaeaea;
+                            border-width: 0 0 1px 0;
+                            background-color: #f2f4f5;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            height: 45px;
+                            padding: 10px;
+                            border: 1px solid #eaeaea;
+                            border-width: 0 0 1px 0;
+                            text-align: center !important;
+                        }
+                        th{
+                            height: 45px;
+                            padding: 10px;
+                            border: 1px solid #eaeaea;
+                            border-width: 0 0 1px 0;
+                            text-align: left;
+                            font-weight: 400;
+                        }
+                        .goodsimg{
+                            .goods-info{
+                                .img{
+                                    display: block;
+                                    width: 100px;
+                                    height: 100px;
+                                    margin: 0 auto;
+                                    font-size: 0;
+                                    line-height: 0;
+                                    a{
+                                        img{
+                                            display: block;
+                                            width: 100px;
+                                            height: 100px;
+                                            margin: 0 auto;
+                                            font-size: 0;
+                                            line-height: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        th{
+                            .goods-info{
+                                p{
+                                    color: #444;
+                                }
+                                .name{
+                                    padding: 0 0 10px 0;
+                                    font-size: 1.2em;
+                                    a{}
+                                }
+                                .bundle{}
+                            }
+                        }
+                        td{
+                            .a-link{
+                                color: #01738b;
+                                text-decoration: underline;
+                              }
+                            }
+                            em{font-style: normal;}
+                            .goods-info{
+                                em{
+                                    margin: 0 4px 0 0;
+                                    color: #503396;
+                                    font-family: 'Roboto';
+                                    font-weight: 500;
+                                    font-size: 1.4666em;
+                                    vertical-align: middle;
+                                }
+                            }
+                        
+
+
+                    }
+                }
+            }
+        }
+        .giftdiv{
+            .tit{
+             margin: 40px 0 0 0;
+             padding: 0 0 16px 0;
+             font-size: 1.6em;
+             font-weight: 400;
+             color: #503396;
+             line-height: 1.1;
+            }
+            .table-w{
+                .board-form{
+                    width: 100%;
+                    margin: 0;
+                    border: 0;
+                    table-layout: fixed;
+                    border-collapse: collapse;
+                    empty-cells: show;
+                    tbody{
+                        tr{
+                            th{
+                                position: relative;
+                                height: 50px;
+                                padding: 7px 15px;
+                                text-align: left;
+                                border-bottom: 1px solid #d1d5dd; 
+                                background: #f7f8f9;
+                            }
+                            td{
+                                position: relative;
+                                height: 50px;
+                                padding: 7px 15px;
+                                text-align: left;
+                                border-bottom: 1px solid #d1d5dd;
+                            }
+                            th{
+                                background: #f7f8f9;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+// 결제목록
+.payment-final{
+    overflow: hidden;
+    margin: 0;
+    padding: 30px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #333;
+    .calc{
+        text-align: center;
+        .cell{
+            display: inline-block;
+            min-width: 180px;
+            vertical-align: middle;
+
+          
+            .price{
+                
+                overflow: hidden;
+                padding-top: 5px;
+                em{
+                    display: inline-block;
+                    font-size: 1.6em;
+                    font-family: 'Roboto';
+                    line-height: 24px;
+                    vertical-align: top;
+                    font-weight: 700;
+                }
+                span{
+                    display: inline-block;
+                    font-size: 1.0667em;
+                    line-height: 24px;
+                    vertical-align: top;
+                    color: #c4c4c4;
+                }
+            }
+            
+        }
+        .real{
+            .price{
+                em{
+                    color: #339eb2;
+                }
+            }
+        }
+    }
+
+.choice{
+margin: 20px 0 0 0;
+padding: 20px 0 0 0;
+text-align: center;
+border-top: 1px solid #434343;
+.inbox{
+    width: 100%;
+    margin: auto;
+    .txt{
+        display: inline-block;
+        padding: 0 20px 0 0;
+        vertical-align: top;
+        color: #c4c4c4;
+    }
+    .cell{
+        display: inline-block;
+        padding: 0 20px;
+        vertical-align: top;
+        select{
+            height: 28px;
+            font-size: 14px;
+          }
+    
+    }
+}
+}
+.choice.ty2{
+    border-top: 0;
+    margin-top: 0;
+}
+}
+
+.btn-group{
+    padding:20px 0 30px 0;
+    margin:0;
+    text-align: center;
+    &::after{
+        clear: both;
+    }
+    &::before,&::after{
+        content:'';
+        display:table;
+    }
+    .button{
+        margin: 0 3px;
+    }
+    .button.large{
+        height: 46px;
+        padding: 0 30px;
+        line-height: 44px;
+    }
+
+}
+        //storepayment-end
+    }
+}
+}
+
+}
+
+
+
+//속성
+table{
+    border-collapse: collapse;
+    empty-cells: show;
+}
+.board-form tbody td, .board-form tbody th {
+    text-align: left;
+  }
+.input-text {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    padding: 0 10px;
+    line-height: 30px;
+    color: #444;
+    border: 1px solid #d8d9db;
+    vertical-align: middle;
+    font-family: 'NanumBarunGothic','Dotum','돋움',sans-serif;
+  }
+.input-textarea{
+display: inline-block;
+width: 100%;
+height: 200px;
+padding: 10px;
+line-height: 16px;
+color: #333;
+border-radius: 0 !important;
+border: 1px solid #d8d9db;
+vertical-align: middle;
+font-family: 'NanumBarunGothic','Dotum','돋움',sans-serif;
+}
+.font-gblue {
+color: #01738b !important;
+}
+em {
+    font-style: normal;
+  }
+
+.inputui01{
+    width: 100%;
+    &::after{
+        content: '.';
+        display: block;
+        font-size: 0;
+        height: 0;
+        line-height: 0;
+        clear: both;
+    }
+    li{
+        float: left;
+
+    }
+    .li01{
+        width: 72px;
+        padding-right: 10px;
+    }
+    .li02{
+        width: 247px;
+        padding-right: 10px;
+    }
+}
+select.small {
+    height: 32px;
+  }
+table select {
+    border-radius: 0;
+  }  
+.button.purple {
+color: #fff;
+line-height: 36px;
+border: 0;
+background: #503396;
+}
+.button.purple.small {
+    line-height: 32px;
+  }
+.button.small {
+height: 32px;
+padding: 0 12px;
+line-height: 30px;
+font-size: .9333em;
+}
+
+a.button {
+    text-decoration: none;
+  }
+
+.useraddlist {
+padding: 23px 34px 21px;
+background-color: #f2f4f5;
+border-radius: 10px;
+margin-top: 20px;
+}
+.ico-circle-minus{
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/ico-circle-minus.png');
+}
+.ico-circle-equal {
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/ico-circle-equal.png');
+  }
+[type="checkbox"],[type="radio"]{
+width: 16px;
+height: 16px;
+vertical-align: middle;
+}
