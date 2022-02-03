@@ -4,445 +4,454 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
     <link rel="stylesheet" href="css/movie_list.css">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
     <title>Document</title>
+    <!-- 파비콘 -->
+    <link rel="shirtcut icon" href="./img/favicon.ico">
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script defer src="js/incom.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="gnb">
-            <div class="inner">
-                <div class="location">
-                    <span><img src="img/store/bg-location-home.png" alt="home"></span>
-                    <a href="#">영화</a>
-                    <a href="#">전체영화</a>
+    <main>
+        <div class="container">
+            <div class="gnb">
+                <div class="inner">
+                    <div class="location">
+                        <span><img src="./img/store/bg-location-home.png" alt="home"></span>
+                        <a href="#">영화</a>
+                        <a href="#">전체영화</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content_w">
+                <div class="inner">
+                    <h2>전체영화</h2>
+                    <div class="tab">
+                        <ul>
+                            <li class="on"><a href="#">박스오피스</a></li>
+                            <li><a href="#">상영예정작</a></li>
+                            <li><a href="#">특별상영</a></li>
+                            <li><a href="#">필름소사이어티</a></li>
+                            <li><a href="#">클래식소사이어티</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="onair-condition">
+                        <div class="filter_wrap">
+                            <p class="filter_btn">
+                                <input id="switch" type="checkbox" name="keep">
+                                <label for="switch"></label>
+                                <p class="filter_name">개봉작만</p>
+                            </p>
+                            <p class="no-result-count"><strong id="totCnt">79</strong>개의 영화가 검색되었습니다.</p>
+                        </div>
+    
+                        <div class="movie-search">
+                            <input type="text" title="영화명을 입력하세요" id="ibxMovieNmSearch" name="ibxMovieNmSearch" placeholder="영화명 검색" class="input-text">
+                            <button type="button" class="btn-search-input" id="btnSearch">검색</button>
+                        </div>
+                    </div>
+    
+    
+                    <div class="movie-list-no-result" id="noDataDiv" style="display: none;">
+                        <p>현재 상영중인 영화가 없습니다.</p>
+                    </div>
+    
+                    <div class="movie-list">
+                        <ul>
+                            <li tabindex="0" class="no-img">
+                                <div class="movie-list-info">
+                                    <p class="rank">1<span class="ir">위</span></p>
+                                        <img src="./img/movie/movie_list01.jpg" alt="해적: 도깨비 깃발" class="poster lozad" onerror="noImg(this)">
+                                            <div class="curation">
+                                                <p class="film" style="display: none">필름 소사이어티</p>
+                                                <p class="classic" style="display: none">클래식 소사이어티</p>
+                                            </div>
+    
+                                    <div class="screen-type2">
+                                        <p name="dbcScrean"><img src="./img/movie/dolby.png" alt="dolby"></p>
+                                        <p name="mxScreen"><img src="./img/movie/mx.png" alt="mx"></p>
+                                    </div>
+                                
+                                    <div class="movie-score">
+                                        <a href="#" class="wrap movieBtn" data-no="21089100" title="해적: 도깨비 깃발 상세보기">
+                                            <div class="summary">
+                                                “가자, 보물 찾으러!”
+                                                자칭 고려 제일검인 의적단 두목 ‘무치’(강하늘)와
+                                                바다를 평정한 해적선의 주인 ‘해랑’(한효주).  
+                                                한 배에서 운명을 함께하게 된 이들이지만
+                                                산과 바다, 태생부터 상극으로 사사건건 부딪히며 바람 잘 날 없는 항해를 이어간다.
+                                                
+                                                그러던 어느 날, 왜구선을 소탕하던 이들은
+                                                흔적도 없이 사라진 왕실의 보물이 어딘가 숨겨져 있다는 사실을 알게 되고
+                                                해적 인생에 다시없을 최대 규모의 보물을 찾아 위험천만한 모험에 나서기 시작한다.
+                                                
+                                                하지만 사라진 보물을 노리는 건 이들뿐만이 아니었으니!
+                                                원하는 것을 얻기 위해 수단과 방법을 가리지 않는 역적 ‘부흥수’(권상우) 또한
+                                                보물을 차지하기 위해 바다에 뛰어드는데...!
+                                                
+                                                해적과 의적, 그리고 역적
+                                                사라진 보물! 찾는 자가 주인이다!
+                                            </div>
+    
+                                            <div class="my-score big">
+                                                <div class="preview">
+                                                    <p class="tit">관람평</p>
+                                                    <p class="number">7.7<span class="ir">점</span></p>
+                                                </div>
+                                            </div>
+    
+                                        </a>
+                                    </div>
+                                </div>
+    
+                                    <div class="tit-area">
+                                        <p class="movie-grade age-12">,</p>
+                                            <p title="해적: 도깨비 깃발" class="tit">해적: 도깨비 깃발</p>
+                                    </div>
+    
+                                    <div class="rate-date">
+                                        <span class="rate">예매율 26.1%</span>
+                                        <span class="date">개봉일 2022.01.26</span>
+                                    </div>
+                                    
+                                    <div class="btn-util">
+    
+                                        <button type="button" class="button btn-like" data-no="21089100">
+                                            <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>545</span>
+                                        </button>
+    
+                                        <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
+                                        <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
+                                        <p class="txt movieStat5" style="display: none">개봉예정</p>
+                                        <p class="txt movieStat6" style="display: none">상영종료</p> -->
+    
+                                        <div class="case col-2 movieStat3">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                            <a href="#" class="button purple img splBtn" data-no="21089100">
+                                                <img src="./img/movie/dolbyBtn.png" alt="dolby 버튼">
+                                            </a>
+                                        </div>
+                                            
+                                        <div class="case movieStat4" style="display: none">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                        </div>
+    
+                                    </div>
+                            </li>
+    
+                            <li tabindex="0" class="no-img">
+                                <div class="movie-list-info">
+                                    <p class="rank">2<span class="ir">위</span></p>
+                                        <img src="./img/movie/movie_list02.jpg" alt="킹메이커" class="poster lozad" onerror="noImg(this)">
+                                            <div class="curation">
+                                                <p class="film" style="display: none">필름 소사이어티</p>
+                                                <p class="classic" style="display: none">클래식 소사이어티</p>
+                                            </div>
+    
+                                    <div class="screen-type2">
+                                        <p name="dbcScrean" style="display: none;"><img src="./img/movie/dolby.png" alt="dolby"></p>
+                                        <p name="mxScreen"><img src="./img/movie/mx.png" alt="mx"></p>
+                                    </div>
+                                
+                                    <div class="movie-score">
+                                        <a href="#" class="wrap movieBtn" data-no="21089100" title="킹메이커 상세보기">
+                                            <div class="summary">
+                                                세상 바뀌는 꼴 좀 보고 싶습니다
+    
+                                                세상을 바꾸기 위해 도전하는 정치인 ‘김운범’ 앞에
+                                                그와 뜻을 함께하고자 선거 전략가 ‘서창대’가 찾아온다.
+                                                
+                                                열세인 상황 속에서 서창대는 아무도 상상하지 못한 선거 전략을 펼치고
+                                                ‘김운범’은 선거에 연이어 승리하며, 당을 대표하는 대통령 후보까지 올라서게 된다.
+                                                
+                                                대통령 선거를 향한 본격적인 행보가 시작되고 그들은 당선을 위해 총력을 기울인다. 
+                                                
+                                                그러던 중 ‘김운범’ 자택에 폭발물이 터지는 사건이 발생하고
+                                                용의자로 ‘서창대’가 지목되면서 둘의 관계는 새로운 국면을 맞이하게 되는데...
+                                                
+                                                치열한 선거판,
+                                                그 중심에 있던 두 남자의 이야기가 시작된다!
+                                            </div>
+    
+                                            <div class="my-score big">
+                                                <div class="preview">
+                                                    <p class="tit">관람평</p>
+                                                    <p class="number">8.7<span class="ir">점</span></p>
+                                                </div>
+                                            </div>
+    
+                                        </a>
+                                    </div>
+                                </div>
+    
+                                    <div class="tit-area">
+                                        <p class="movie-grade age-15">,</p>
+                                            <p title="킹메이커" class="tit">킹메이커</p>
+                                    </div>
+    
+                                    <div class="rate-date">
+                                        <span class="rate">예매율 13.5%</span>
+                                        <span class="date">개봉일 2022.01.26</span>
+                                    </div>
+                                    
+                                    <div class="btn-util">
+    
+                                        <button type="button" class="button btn-like" data-no="21089100">
+                                            <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>703</span>
+                                        </button>
+    
+                                        <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
+                                        <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
+                                        <p class="txt movieStat5" style="display: none">개봉예정</p>
+                                        <p class="txt movieStat6" style="display: none">상영종료</p> -->
+    
+                                        <div class="case col-2 movieStat3" style="display: none">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                            <a href="#" class="button purple img splBtn" data-no="21089100">
+                                                <img src="./img/movie/dolbyBtn.png" alt="dolby 버튼">
+                                            </a>
+                                        </div>
+                                            
+                                        <div class="case movieStat4">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                        </div>
+    
+                                    </div>
+                            </li>
+    
+                            <li tabindex="0" class="no-img">
+                                <div class="movie-list-info">
+                                    <p class="rank">3<span class="ir">위</span></p>
+                                        <img src="./img/movie/movie_list03.jpg" alt="듄" class="poster lozad" onerror="noImg(this)">
+                                            <div class="curation">
+                                                <p class="film" style="display: none">필름 소사이어티</p>
+                                                <p class="classic" style="display: none">클래식 소사이어티</p>
+                                            </div>
+    
+                                    <div class="screen-type2">
+                                        <p name="dbcScrean"><img src="./img/movie/dolby.png" alt="dolby"></p>
+                                        <p name="mxScreen"><img src="./img/movie/mx.png" alt="mx"></p>
+                                    </div>
+                                
+                                    <div class="movie-score">
+                                        <a href="#" class="wrap movieBtn" data-no="21089100" title="듄 상세보기">
+                                            <div class="summary">
+                                                “듄을 지배하는 자가 우주를 지배한다!”
+    
+                                                10191년, 아트레이데스 가문의 후계자인 폴(티모시 샬라메)은 시공을 초월한 존재이자 
+                                                전 우주를 구원할 예지된 자의 운명을 타고났다. 
+                                                그리고 어떤 계시처럼 매일 꿈에서 아라키스 행성에 있는 한 여인을 만난다. 
+                                                모래언덕을 뜻하는 '듄'이라 불리는 아라키스는 물 한 방울 없는 사막이지만 
+                                                우주에서 가장 비싼 물질인 신성한 환각제 스파이스의 유일한 생산지로 이를 차지하기 위한 전쟁이 치열하다. 
+                                                황제의 명령으로 폴과 아트레이데스 가문은 죽음이 기다리는 아라키스로 향하는데…
+                                                
+                                                위대한 자는 부름에 응답한다, 두려움에 맞서라, 이것은 위대한 시작이다!
+                                            </div>
+    
+                                            <div class="my-score big">
+                                                <div class="preview">
+                                                    <p class="tit">관람평</p>
+                                                    <p class="number">9<span class="ir">점</span></p>
+                                                </div>
+                                            </div>
+    
+                                        </a>
+                                    </div>
+                                </div>
+    
+                                    <div class="tit-area">
+                                        <p class="movie-grade age-12">,</p>
+                                            <p title="듄" class="tit">듄</p>
+                                    </div>
+    
+                                    <div class="rate-date">
+                                        <span class="rate">예매율 9.6%</span>
+                                        <span class="date">개봉일 2021.10.20</span>
+                                    </div>
+                                    
+                                    <div class="btn-util">
+    
+                                        <button type="button" class="button btn-like" data-no="21089100">
+                                            <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>1.8k</span>
+                                        </button>
+    
+                                        <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
+                                        <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
+                                        <p class="txt movieStat5" style="display: none">개봉예정</p>
+                                        <p class="txt movieStat6" style="display: none">상영종료</p> -->
+    
+                                        <div class="case col-2 movieStat3">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                            <a href="#" class="button purple img splBtn" data-no="21089100">
+                                                <img src="./img/movie/dolbyBtn.png" alt="dolby 버튼">
+                                            </a>
+                                        </div>
+                                            
+                                        <div class="case movieStat4" style="display: none">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                        </div>
+    
+                                    </div>
+                            </li>
+    
+                            <li tabindex="0" class="no-img">
+                                <div class="movie-list-info">
+                                    <p class="rank">4<span class="ir">위</span></p>
+                                        <img src="./img/movie/movie_list04.jpg" alt="나일 강의 죽음" class="poster lozad" onerror="noImg(this)">
+                                            <div class="curation">
+                                                <p class="film" style="display: none">필름 소사이어티</p>
+                                                <p class="classic" style="display: none">클래식 소사이어티</p>
+                                            </div>
+    
+                                    <div class="screen-type2">
+                                        <p name="dbcScrean"><img src="./img/movie/dolby.png" alt="dolby"></p>
+                                        <p name="mxScreen"><img src="./img/movie/mx.png" alt="mx"></p>
+                                    </div>
+                                
+                                    <div class="movie-score">
+                                        <a href="#" class="wrap movieBtn" data-no="21089100" title="나일 강의 죽음 상세보기">
+                                            <div class="summary">
+                                                &lt;오리엔트 특급 살인&gt;을 이을 또 하나의 완벽한 살인 사건
+                                                살인은 시작에 불과했다!
+                                                
+                                                행복한 신혼부부를 태운 나일 강의 초호화 여객선
+                                                그곳에서 끔찍한 살인 사건이 벌어진다.
+                                                
+                                                위태롭고 불길한 분위기의 선상에서 탑승객들을 심문하는 탐정 ‘에르큘 포와로’
+                                                모두가 범인으로 의심되는 가운데,
+                                                연이어 발생한 살인 사건은 그의 영혼을 송두리째 뒤흔들고,
+                                                관객은 마지막 순간까지 예기치 못한 반전으로 놀라운 결말에 이르게 된다.
+                                            </div>
+    
+                                            <div class="my-score big">
+                                                <div class="preview">
+                                                    <p class="tit">관람평</p>
+                                                    <p class="number">0<span class="ir">점</span></p>
+                                                </div>
+                                            </div>
+    
+                                        </a>
+                                    </div>
+                                </div>
+    
+                                    <div class="tit-area">
+                                        <p class="movie-grade age-12">,</p>
+                                            <p title="나일 강의 죽음" class="tit">나일 강의 죽음</p>
+                                    </div>
+    
+                                    <div class="rate-date">
+                                        <span class="rate">예매율 8.1%</span>
+                                        <span class="date">개봉일 2022.02.09</span>
+                                    </div>
+                                    
+                                    <div class="btn-util">
+    
+                                        <button type="button" class="button btn-like" data-no="21089100">
+                                            <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>430</span>
+                                        </button>
+    
+                                        <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
+                                        <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
+                                        <p class="txt movieStat5" style="display: none">개봉예정</p>
+                                        <p class="txt movieStat6" style="display: none">상영종료</p> -->
+    
+                                        <div class="case col-2 movieStat3">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                            <a href="#" class="button purple img splBtn" data-no="21089100">
+                                                <img src="./img/movie/dolbyBtn.png" alt="dolby 버튼">
+                                            </a>
+                                        </div>
+                                            
+                                        <div class="case movieStat4" style="display: none">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                        </div>
+    
+                                    </div>
+                            </li>
+    
+                            <li tabindex="0" class="no-img">
+                                <div class="movie-list-info">
+                                    <p class="rank">5<span class="ir">위</span></p>
+                                        <img src="./img/movie/movie_list05.jpg" alt="프리! 더 파이널 스트로크 전편" class="poster lozad" onerror="noImg(this)">
+                                            <div class="curation">
+                                                <p class="film" style="display: none">필름 소사이어티</p>
+                                                <p class="classic" style="display: none">클래식 소사이어티</p>
+                                            </div>
+    
+                                    <div class="screen-type2">
+                                        <p name="dbcScrean" style="display: none;"><img src="./img/movie/dolby.png" alt="dolby"></p>
+                                        <p name="mxScreen" style="display: none;"><img src="./img/movie/mx.png" alt="mx"></p>
+                                    </div>
+                                
+                                    <div class="movie-score">
+                                        <a href="#" class="wrap movieBtn" data-no="21089100" title="프리! 더 파이널 스트로크 전편">
+                                            <div class="summary">
+                                                세계를 목표로 하는 나나세 하루카의 새로운 무대는 이전에 방문했던 꿈의 장소인 시드니.
+                                                그곳으로 떠나기 전 잠시 휴식을 취하던 어느 날, 하루카는 전 일본 수영 경기 대표 선발전에서
+                                                싸웠던 한 선수와 우연히 대치하고 투지를 불태운다.
+                                                함께 헤엄쳐 왔던 동료들과의 추억을 가슴에 품고 한층 더 새로운 경지에 발을 내딛는 하루카.
+                                                그곳에서 기다리고 있는 건 절대 왕자 · 알베르트 워란데르·
+                                                시드니 대회를 위해 선수들은 저마다 사기를 북돋워간다.
+                                                세계의 정점을 겨루는 가운데, 그들은 무엇을 느끼고 무엇을 위해 헤엄치는가.
+                                                물과 마주하는 그들의 뜨거운 싸움이 여기서 시작된다!
+                                            </div>
+    
+                                            <div class="my-score big">
+                                                <div class="preview">
+                                                    <p class="tit">관람평</p>
+                                                    <p class="number">9.4<span class="ir">점</span></p>
+                                                </div>
+                                            </div>
+    
+                                        </a>
+                                    </div>
+                                </div>
+    
+                                    <div class="tit-area">
+                                        <p class="movie-grade age-all">,</p>
+                                            <p title="프리! 더 파이널 스트로크 전편" class="tit">프리! 더 파이널 스트로크 전편</p>
+                                    </div>
+    
+                                    <div class="rate-date">
+                                        <span class="rate">예매율 7.4%</span>
+                                        <span class="date">개봉일 2022.01.20</span>
+                                    </div>
+                                    
+                                    <div class="btn-util">
+    
+                                        <button type="button" class="button btn-like" data-no="21089100">
+                                            <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>995</span>
+                                        </button>
+    
+                                        <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
+                                        <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
+                                        <p class="txt movieStat5" style="display: none">개봉예정</p>
+                                        <p class="txt movieStat6" style="display: none">상영종료</p> -->
+    
+                                        <div class="case col-2 movieStat3" style="display: none;">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                            <a href="#" class="button purple img splBtn" data-no="21089100">
+                                                <img src="./img/movie/dolbyBtn.png" alt="dolby 버튼">
+                                            </a>
+                                        </div>
+                                            
+                                        <div class="case movieStat4">
+                                            <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
+                                        </div>
+    
+                                    </div>
+                            </li>
+                        </ul>
+    
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="content_w">
-            <div class="inner">
-                <h2>전체영화</h2>
-                <div class="tab">
-                    <ul>
-                        <li class="on"><a href="#">박스오피스</a></li>
-                        <li><a href="#">상영예정작</a></li>
-                        <li><a href="#">특별상영</a></li>
-                        <li><a href="#">필름소사이어티</a></li>
-                        <li><a href="#">클래식소사이어티</a></li>
-                    </ul>
-                </div>
-
-                <div class="onair-condition">
-                    <div class="filter_wrap">
-                        <p class="filter_btn">
-                            <input id="switch" type="checkbox" name="keep">
-                            <label for="switch"></label>
-                            <p class="filter_name">개봉작만</p>
-                        </p>
-                        <p class="no-result-count"><strong id="totCnt">79</strong>개의 영화가 검색되었습니다.</p>
-                    </div>
-
-                    <div class="movie-search">
-                        <input type="text" title="영화명을 입력하세요" id="ibxMovieNmSearch" name="ibxMovieNmSearch" placeholder="영화명 검색" class="input-text">
-                        <button type="button" class="btn-search-input" id="btnSearch">검색</button>
-                    </div>
-                </div>
-
-
-                <div class="movie-list-no-result" id="noDataDiv" style="display: none;">
-                    <p>현재 상영중인 영화가 없습니다.</p>
-                </div>
-
-                <div class="movie-list">
-                    <ul>
-                        <li tabindex="0" class="no-img">
-                            <div class="movie-list-info">
-                                <p class="rank">1<span class="ir">위</span></p>
-                                    <img src="img/movie/movie_list01.jpg" alt="해적: 도깨비 깃발" class="poster lozad" onerror="noImg(this)">
-                                        <div class="curation">
-                                            <p class="film" style="display: none">필름 소사이어티</p>
-                                            <p class="classic" style="display: none">클래식 소사이어티</p>
-                                        </div>
-
-                                <div class="screen-type2">
-                                    <p name="dbcScrean"><img src="img/movie/dolby.png" alt="dolby"></p>
-                                    <p name="mxScreen"><img src="img/movie/mx.png" alt="mx"></p>
-                                </div>
-                            
-                                <div class="movie-score">
-                                    <a href="#" class="wrap movieBtn" data-no="21089100" title="해적: 도깨비 깃발 상세보기">
-                                        <div class="summary">
-                                            “가자, 보물 찾으러!”
-                                            자칭 고려 제일검인 의적단 두목 ‘무치’(강하늘)와
-                                            바다를 평정한 해적선의 주인 ‘해랑’(한효주).  
-                                            한 배에서 운명을 함께하게 된 이들이지만
-                                            산과 바다, 태생부터 상극으로 사사건건 부딪히며 바람 잘 날 없는 항해를 이어간다.
-                                            
-                                            그러던 어느 날, 왜구선을 소탕하던 이들은
-                                            흔적도 없이 사라진 왕실의 보물이 어딘가 숨겨져 있다는 사실을 알게 되고
-                                            해적 인생에 다시없을 최대 규모의 보물을 찾아 위험천만한 모험에 나서기 시작한다.
-                                            
-                                            하지만 사라진 보물을 노리는 건 이들뿐만이 아니었으니!
-                                            원하는 것을 얻기 위해 수단과 방법을 가리지 않는 역적 ‘부흥수’(권상우) 또한
-                                            보물을 차지하기 위해 바다에 뛰어드는데...!
-                                            
-                                            해적과 의적, 그리고 역적
-                                            사라진 보물! 찾는 자가 주인이다!
-                                        </div>
-
-                                        <div class="my-score big">
-                                            <div class="preview">
-                                                <p class="tit">관람평</p>
-                                                <p class="number">7.7<span class="ir">점</span></p>
-                                            </div>
-                                        </div>
-
-                                    </a>
-                                </div>
-                            </div>
-
-                                <div class="tit-area">
-                                    <p class="movie-grade age-12">,</p>
-                                        <p title="해적: 도깨비 깃발" class="tit">해적: 도깨비 깃발</p>
-                                </div>
-
-                                <div class="rate-date">
-                                    <span class="rate">예매율 26.1%</span>
-                                    <span class="date">개봉일 2022.01.26</span>
-                                </div>
-                                
-                                <div class="btn-util">
-
-                                    <button type="button" class="button btn-like" data-no="21089100">
-                                        <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>545</span>
-                                    </button>
-
-                                    <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
-                                    <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
-                                    <p class="txt movieStat5" style="display: none">개봉예정</p>
-                                    <p class="txt movieStat6" style="display: none">상영종료</p> -->
-
-                                    <div class="case col-2 movieStat3">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                        <a href="#" class="button purple img splBtn" data-no="21089100">
-                                            <img src="img/movie/dolbyBtn.png" alt="dolby 버튼">
-                                        </a>
-                                    </div>
-                                        
-                                    <div class="case movieStat4" style="display: none">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                    </div>
-
-                                </div>
-                        </li>
-
-                        <li tabindex="0" class="no-img">
-                            <div class="movie-list-info">
-                                <p class="rank">2<span class="ir">위</span></p>
-                                    <img src="img/movie/movie_list02.jpg" alt="킹메이커" class="poster lozad" onerror="noImg(this)">
-                                        <div class="curation">
-                                            <p class="film" style="display: none">필름 소사이어티</p>
-                                            <p class="classic" style="display: none">클래식 소사이어티</p>
-                                        </div>
-
-                                <div class="screen-type2">
-                                    <p name="dbcScrean" style="display: none;"><img src="img/movie/dolby.png" alt="dolby"></p>
-                                    <p name="mxScreen"><img src="img/movie/mx.png" alt="mx"></p>
-                                </div>
-                            
-                                <div class="movie-score">
-                                    <a href="#" class="wrap movieBtn" data-no="21089100" title="킹메이커 상세보기">
-                                        <div class="summary">
-                                            세상 바뀌는 꼴 좀 보고 싶습니다
-
-                                            세상을 바꾸기 위해 도전하는 정치인 ‘김운범’ 앞에
-                                            그와 뜻을 함께하고자 선거 전략가 ‘서창대’가 찾아온다.
-                                            
-                                            열세인 상황 속에서 서창대는 아무도 상상하지 못한 선거 전략을 펼치고
-                                            ‘김운범’은 선거에 연이어 승리하며, 당을 대표하는 대통령 후보까지 올라서게 된다.
-                                            
-                                            대통령 선거를 향한 본격적인 행보가 시작되고 그들은 당선을 위해 총력을 기울인다. 
-                                            
-                                            그러던 중 ‘김운범’ 자택에 폭발물이 터지는 사건이 발생하고
-                                            용의자로 ‘서창대’가 지목되면서 둘의 관계는 새로운 국면을 맞이하게 되는데...
-                                            
-                                            치열한 선거판,
-                                            그 중심에 있던 두 남자의 이야기가 시작된다!
-                                        </div>
-
-                                        <div class="my-score big">
-                                            <div class="preview">
-                                                <p class="tit">관람평</p>
-                                                <p class="number">8.7<span class="ir">점</span></p>
-                                            </div>
-                                        </div>
-
-                                    </a>
-                                </div>
-                            </div>
-
-                                <div class="tit-area">
-                                    <p class="movie-grade age-15">,</p>
-                                        <p title="킹메이커" class="tit">킹메이커</p>
-                                </div>
-
-                                <div class="rate-date">
-                                    <span class="rate">예매율 13.5%</span>
-                                    <span class="date">개봉일 2022.01.26</span>
-                                </div>
-                                
-                                <div class="btn-util">
-
-                                    <button type="button" class="button btn-like" data-no="21089100">
-                                        <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>703</span>
-                                    </button>
-
-                                    <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
-                                    <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
-                                    <p class="txt movieStat5" style="display: none">개봉예정</p>
-                                    <p class="txt movieStat6" style="display: none">상영종료</p> -->
-
-                                    <div class="case col-2 movieStat3" style="display: none">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                        <a href="#" class="button purple img splBtn" data-no="21089100">
-                                            <img src="img/movie/dolbyBtn.png" alt="dolby 버튼">
-                                        </a>
-                                    </div>
-                                        
-                                    <div class="case movieStat4">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                    </div>
-
-                                </div>
-                        </li>
-
-                        <li tabindex="0" class="no-img">
-                            <div class="movie-list-info">
-                                <p class="rank">3<span class="ir">위</span></p>
-                                    <img src="img/movie/movie_list03.jpg" alt="듄" class="poster lozad" onerror="noImg(this)">
-                                        <div class="curation">
-                                            <p class="film" style="display: none">필름 소사이어티</p>
-                                            <p class="classic" style="display: none">클래식 소사이어티</p>
-                                        </div>
-
-                                <div class="screen-type2">
-                                    <p name="dbcScrean"><img src="img/movie/dolby.png" alt="dolby"></p>
-                                    <p name="mxScreen"><img src="img/movie/mx.png" alt="mx"></p>
-                                </div>
-                            
-                                <div class="movie-score">
-                                    <a href="#" class="wrap movieBtn" data-no="21089100" title="듄 상세보기">
-                                        <div class="summary">
-                                            “듄을 지배하는 자가 우주를 지배한다!”
-
-                                            10191년, 아트레이데스 가문의 후계자인 폴(티모시 샬라메)은 시공을 초월한 존재이자 
-                                            전 우주를 구원할 예지된 자의 운명을 타고났다. 
-                                            그리고 어떤 계시처럼 매일 꿈에서 아라키스 행성에 있는 한 여인을 만난다. 
-                                            모래언덕을 뜻하는 '듄'이라 불리는 아라키스는 물 한 방울 없는 사막이지만 
-                                            우주에서 가장 비싼 물질인 신성한 환각제 스파이스의 유일한 생산지로 이를 차지하기 위한 전쟁이 치열하다. 
-                                            황제의 명령으로 폴과 아트레이데스 가문은 죽음이 기다리는 아라키스로 향하는데…
-                                            
-                                            위대한 자는 부름에 응답한다, 두려움에 맞서라, 이것은 위대한 시작이다!
-                                        </div>
-
-                                        <div class="my-score big">
-                                            <div class="preview">
-                                                <p class="tit">관람평</p>
-                                                <p class="number">9<span class="ir">점</span></p>
-                                            </div>
-                                        </div>
-
-                                    </a>
-                                </div>
-                            </div>
-
-                                <div class="tit-area">
-                                    <p class="movie-grade age-12">,</p>
-                                        <p title="듄" class="tit">듄</p>
-                                </div>
-
-                                <div class="rate-date">
-                                    <span class="rate">예매율 9.6%</span>
-                                    <span class="date">개봉일 2021.10.20</span>
-                                </div>
-                                
-                                <div class="btn-util">
-
-                                    <button type="button" class="button btn-like" data-no="21089100">
-                                        <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>1.8k</span>
-                                    </button>
-
-                                    <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
-                                    <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
-                                    <p class="txt movieStat5" style="display: none">개봉예정</p>
-                                    <p class="txt movieStat6" style="display: none">상영종료</p> -->
-
-                                    <div class="case col-2 movieStat3">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                        <a href="#" class="button purple img splBtn" data-no="21089100">
-                                            <img src="img/movie/dolbyBtn.png" alt="dolby 버튼">
-                                        </a>
-                                    </div>
-                                        
-                                    <div class="case movieStat4" style="display: none">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                    </div>
-
-                                </div>
-                        </li>
-
-                        <li tabindex="0" class="no-img">
-                            <div class="movie-list-info">
-                                <p class="rank">4<span class="ir">위</span></p>
-                                    <img src="img/movie/movie_list04.jpg" alt="나일 강의 죽음" class="poster lozad" onerror="noImg(this)">
-                                        <div class="curation">
-                                            <p class="film" style="display: none">필름 소사이어티</p>
-                                            <p class="classic" style="display: none">클래식 소사이어티</p>
-                                        </div>
-
-                                <div class="screen-type2">
-                                    <p name="dbcScrean"><img src="img/movie/dolby.png" alt="dolby"></p>
-                                    <p name="mxScreen"><img src="img/movie/mx.png" alt="mx"></p>
-                                </div>
-                            
-                                <div class="movie-score">
-                                    <a href="#" class="wrap movieBtn" data-no="21089100" title="나일 강의 죽음 상세보기">
-                                        <div class="summary">
-                                            &lt;오리엔트 특급 살인&gt;을 이을 또 하나의 완벽한 살인 사건
-                                            살인은 시작에 불과했다!
-                                            
-                                            행복한 신혼부부를 태운 나일 강의 초호화 여객선
-                                            그곳에서 끔찍한 살인 사건이 벌어진다.
-                                            
-                                            위태롭고 불길한 분위기의 선상에서 탑승객들을 심문하는 탐정 ‘에르큘 포와로’
-                                            모두가 범인으로 의심되는 가운데,
-                                            연이어 발생한 살인 사건은 그의 영혼을 송두리째 뒤흔들고,
-                                            관객은 마지막 순간까지 예기치 못한 반전으로 놀라운 결말에 이르게 된다.
-                                        </div>
-
-                                        <div class="my-score big">
-                                            <div class="preview">
-                                                <p class="tit">관람평</p>
-                                                <p class="number">0<span class="ir">점</span></p>
-                                            </div>
-                                        </div>
-
-                                    </a>
-                                </div>
-                            </div>
-
-                                <div class="tit-area">
-                                    <p class="movie-grade age-12">,</p>
-                                        <p title="나일 강의 죽음" class="tit">나일 강의 죽음</p>
-                                </div>
-
-                                <div class="rate-date">
-                                    <span class="rate">예매율 8.1%</span>
-                                    <span class="date">개봉일 2022.02.09</span>
-                                </div>
-                                
-                                <div class="btn-util">
-
-                                    <button type="button" class="button btn-like" data-no="21089100">
-                                        <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>430</span>
-                                    </button>
-
-                                    <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
-                                    <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
-                                    <p class="txt movieStat5" style="display: none">개봉예정</p>
-                                    <p class="txt movieStat6" style="display: none">상영종료</p> -->
-
-                                    <div class="case col-2 movieStat3">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                        <a href="#" class="button purple img splBtn" data-no="21089100">
-                                            <img src="img/movie/dolbyBtn.png" alt="dolby 버튼">
-                                        </a>
-                                    </div>
-                                        
-                                    <div class="case movieStat4" style="display: none">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                    </div>
-
-                                </div>
-                        </li>
-
-                        <li tabindex="0" class="no-img">
-                            <div class="movie-list-info">
-                                <p class="rank">5<span class="ir">위</span></p>
-                                    <img src="img/movie/movie_list05.jpg" alt="프리! 더 파이널 스트로크 전편" class="poster lozad" onerror="noImg(this)">
-                                        <div class="curation">
-                                            <p class="film" style="display: none">필름 소사이어티</p>
-                                            <p class="classic" style="display: none">클래식 소사이어티</p>
-                                        </div>
-
-                                <div class="screen-type2">
-                                    <p name="dbcScrean" style="display: none;"><img src="img/movie/dolby.png" alt="dolby"></p>
-                                    <p name="mxScreen" style="display: none;"><img src="img/movie/mx.png" alt="mx"></p>
-                                </div>
-                            
-                                <div class="movie-score">
-                                    <a href="#" class="wrap movieBtn" data-no="21089100" title="프리! 더 파이널 스트로크 전편">
-                                        <div class="summary">
-                                            세계를 목표로 하는 나나세 하루카의 새로운 무대는 이전에 방문했던 꿈의 장소인 시드니.
-                                            그곳으로 떠나기 전 잠시 휴식을 취하던 어느 날, 하루카는 전 일본 수영 경기 대표 선발전에서
-                                            싸웠던 한 선수와 우연히 대치하고 투지를 불태운다.
-                                            함께 헤엄쳐 왔던 동료들과의 추억을 가슴에 품고 한층 더 새로운 경지에 발을 내딛는 하루카.
-                                            그곳에서 기다리고 있는 건 절대 왕자 · 알베르트 워란데르·
-                                            시드니 대회를 위해 선수들은 저마다 사기를 북돋워간다.
-                                            세계의 정점을 겨루는 가운데, 그들은 무엇을 느끼고 무엇을 위해 헤엄치는가.
-                                            물과 마주하는 그들의 뜨거운 싸움이 여기서 시작된다!
-                                        </div>
-
-                                        <div class="my-score big">
-                                            <div class="preview">
-                                                <p class="tit">관람평</p>
-                                                <p class="number">9.4<span class="ir">점</span></p>
-                                            </div>
-                                        </div>
-
-                                    </a>
-                                </div>
-                            </div>
-
-                                <div class="tit-area">
-                                    <p class="movie-grade age-all">,</p>
-                                        <p title="프리! 더 파이널 스트로크 전편" class="tit">프리! 더 파이널 스트로크 전편</p>
-                                </div>
-
-                                <div class="rate-date">
-                                    <span class="rate">예매율 7.4%</span>
-                                    <span class="date">개봉일 2022.01.20</span>
-                                </div>
-                                
-                                <div class="btn-util">
-
-                                    <button type="button" class="button btn-like" data-no="21089100">
-                                        <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>995</span>
-                                    </button>
-
-                                    <!-- <p class="txt movieStat1" style="display: none">상영예정</p>
-                                    <p class="txt movieStat2" style="display: none">1월 개봉예정</p>
-                                    <p class="txt movieStat5" style="display: none">개봉예정</p>
-                                    <p class="txt movieStat6" style="display: none">상영종료</p> -->
-
-                                    <div class="case col-2 movieStat3" style="display: none;">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                        <a href="#" class="button purple img splBtn" data-no="21089100">
-                                            <img src="img/movie/dolbyBtn.png" alt="dolby 버튼">
-                                        </a>
-                                    </div>
-                                        
-                                    <div class="case movieStat4">
-                                        <a href="#" class="button purple bokdBtn" data-no="21089100" title="영화 예매하기">예매</a>
-                                    </div>
-
-                                </div>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
 </body>
 </html>

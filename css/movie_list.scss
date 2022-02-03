@@ -1,5 +1,6 @@
-@import '_common';
+@import '_common.scss';
 
+main{position: relative;}
 .inner {width: 1100px; margin: 0 auto; position: relative; padding:0 20px;}
 .container {
     width: 100%; margin: 0 auto; position: relative;
@@ -114,7 +115,7 @@
             line-height: 0;
             border: none;
             text-indent: -9999px;
-            background: #fff url('/img/movie/ico-search.png') no-repeat center;
+            background: #fff url('../img/movie/ico-search.png') no-repeat center;
             opacity: 0.7;
         }
         //movie-list
@@ -155,13 +156,13 @@
 
                 }
                 .age-all{
-                    background-image: url('/img/movie/txt-age-all.png');
+                    background-image: url('../img/movie/txt-age-all.png');
                 }
                 .age-12{
-                    background-image: url('/img/movie/txt-age-12.png');
+                    background-image: url('../img/movie/txt-age-12.png');
                 }
                 .age-15{
-                    background-image: url('/img/movie/txt-age-15.png');
+                    background-image: url('../img/movie/txt-age-15.png');
                 }
 
                 .tit{
