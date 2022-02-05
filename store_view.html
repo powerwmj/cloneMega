@@ -8,9 +8,13 @@
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Document</title>
+    <link rel="shirtcut icon" href="./img/favicon.ico">
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script defer src="js/incom.js"></script>
+    <script defer src="js/scroll.js"></script>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <div class="gnb">
             <div class="inner">
                 <div class="location">
@@ -19,7 +23,7 @@
                     <a href="#">스토어 상세</a>
                 </div>
                 <div class="sns">
-                    <a href="#">공유하기</a>
+                    <a>공유하기</a>
                     <div class="sns-share">
                         <div class="btn_w">
                             <button class="btn-sns face">페이스북</button>
@@ -32,7 +36,7 @@
             </div>
         </div>
         <div class="content_w">
-            <div class="inner">
+            <div class="inner pb-100">
                 <!-- 상품 상세 -->
                 <div class="store-view">
                     <!-- title -->
@@ -130,6 +134,11 @@
                 <!-- 상품 상세 : e -->
             </div>
         </div>
+    </main>
+    <div class="quick_w">
+        <a class="quick" href="#">
+            <img src="img/store/btn-go-top.png" alt="TOP">
+        </a>
     </div>
     <script>
         $('.sns').on('click', function(){
