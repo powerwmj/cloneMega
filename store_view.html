@@ -8,9 +8,14 @@
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Document</title>
+    <link rel="shirtcut icon" href="./img/favicon.ico">
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script defer src="js/incom.js"></script>
+    <script defer src="js/scroll.js"></script>
+    <script defer src="js/pop.js"></script>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <div class="gnb">
             <div class="inner">
                 <div class="location">
@@ -19,7 +24,7 @@
                     <a href="#">스토어 상세</a>
                 </div>
                 <div class="sns">
-                    <a href="#">공유하기</a>
+                    <a>공유하기</a>
                     <div class="sns-share">
                         <div class="btn_w">
                             <button class="btn-sns face">페이스북</button>
@@ -32,7 +37,7 @@
             </div>
         </div>
         <div class="content_w">
-            <div class="inner">
+            <div class="inner pb-100">
                 <!-- 상품 상세 -->
                 <div class="store-view">
                     <!-- title -->
@@ -51,7 +56,7 @@
                             <!-- 정보 -->
                             <dl>
                                 <dt>사용극장</dt>
-                                <dd><a href="#">사용가능극장</a></dd>
+                                <dd><a class="open">사용가능극장</a></dd>
                                 <dt>유효기간</dt>
                                 <dd>구매일로부터 3개월 이내 사용 가능<span class="gray">구매일로부터 3개월까지 사용 가능합니다.</span></dd>
                                 <dt>판매수량</dt>
@@ -128,6 +133,59 @@
                     <!-- 상세 : e -->
                 </div>
                 <!-- 상품 상세 : e -->
+            </div>
+        </div>
+    </main>
+    <div class="quick_w">
+        <a class="quick" href="#">
+            <img src="img/store/btn-go-top.png" alt="TOP">
+        </a>
+    </div>
+    <div class="pop_w">
+        <div class="back">
+            <div class="pop">
+                <div class="pop_tit">
+                    <h2>사용가능 극장</h2>
+                    <a href="#" class="close"><img src="img/store/btn-layer-close.png" alt="close"></a>
+                </div>
+                <div class="pop_cont">
+                    <p class="txt">선택하신 상품의 사용가능한 극장입니다.</p>
+                    <div class="area">
+                        <ul class="region-w">
+                            <li class="on">
+                                <button>서울(17)</button>
+                                <div class="con">
+                                    <ul class="theater-list">
+                                        <li>강남</li>
+                                        <li>강남대로(씨티)</li>
+                                        <li>강동</li>
+                                        <li>군자</li>
+                                        <li>동대문</li>
+                                        <li>마곡</li>
+                                        <li>목동</li>
+                                        <li>상봉</li>
+                                        <li>상암월드컵경기장</li>
+                                        <li>성수</li>
+                                        <li>송파파크하비오</li>
+                                        <li>신촌</li>
+                                        <li>이수</li>
+                                        <li>창동</li>
+                                        <li>코엑스</li>
+                                        <li>홍대</li>
+                                        <li>화곡</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><button>경기(27)</button></li>
+                            <li><button>인천(5)</button></li>
+                            <li><button>대전/충청/세종(17)</button></li>
+                            <li><button>부산/대구/경상(22)</button></li>
+                            <li><button>광주/전라(9)</button></li>
+                            <li><button>강원(4)</button></li>
+                            <li><button>제주(0)</button></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
