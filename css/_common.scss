@@ -43,7 +43,6 @@ div, span, p, a, input, dl, dt, dd{
     margin: 0; padding: 0;
 }
 img, video, iframe{
-    width: 100%; height: auto; 
     margin: 0; padding: 0;
     vertical-align: middle;
 }
@@ -75,8 +74,7 @@ $fb: #f8f8fa; // 풋터 배경색
 // width
 
 .mwidth{
-    width: 100%;
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
     padding: 0 20px
 }
