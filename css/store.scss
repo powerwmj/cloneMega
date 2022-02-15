@@ -7,6 +7,7 @@
         width: 100%; height: 42px; background: #f8f8fa;
         .location {
             width: 100%; height: 42px;
+            img {width: inherit;}
             a {
                 color: #666; margin-left: 25px; line-height: 42px; position: relative;
                 &:hover {text-decoration: underline;}
@@ -27,6 +28,11 @@
             .sns-share .btn_w .link {background: url('../img/store/btn-sns-share-link.png') center top no-repeat;}
         }
     }
+    .gnb.active {background: #444; position: fixed; z-index: 100; top: 0;}
+    .gnb.active .location a {color: #fff;}
+    .gnb.active .sns a {color: #fff;}
+    .gnb.active .sns a::after {content: url('../img/store/sns_link_w.png'); display: inline-block; padding-left: 10px; vertical-align: sub;}
+
     .content_w {
         width: 100%; padding: 40px 0 0 0;
         h2 {padding-bottom: 26px; font-size: 1.8666em; letter-spacing: -1px; line-height: 1.1; font-family: 'NanumBarunGothic', sans-serif; font-weight: 400;}
@@ -48,11 +54,11 @@
                 height: 280px;
                 a {color: inherit; position: relative; display: inline-block; padding-right: 285px; height: 100%;}
                 .slogun {padding-top: 36px; font-size: 2.1333em; line-height: 1.1;}
-                .slogun p {color: #503396;}
-                .slogun p span {color: #01738b; display: block;}
+                .slogun p {color: #503396; font-size: inherit; }
+                .slogun p span {color: #01738b; display: block; font-size: inherit; }
                 .goods {padding-top: 30px;}
                 .goods .name {font-size: 1.2em; color: #222;}
-                .goods .txt {height: 45px; overflow: hidden;}
+                .goods .txt {height: 45px; overflow: hidden; font-size: inherit;}
                 .img {position: absolute; top: 0; right: 0;}
                 &::after {content: ''; display: block;}
             }
@@ -65,14 +71,15 @@
             }
             .store-list {
                 ul {display: flex; justify-content: flex-start;}
-                ul li {width: 290px; border: 1px solid #e4e4e4; border-radius: 10px; margin-right: 40px;}
+                ul li {width: 245px; border: 1px solid #e4e4e4; border-radius: 10px; margin-right: 40px;}
                 ul li:hover {border: 1px solid #503396;}
                 ul li:nth-of-type(4) {margin-right: 0;}
-                ul li a {position: relative; height: 485px; display: block;}
+                ul li a {position: relative; height: inherit; display: block; padding-bottom: 10px;}
                 ul li .label {position: absolute; top: 0; left: 0; overflow: hidden; height: 24px; padding: 0 10px; line-height: 27px; color: #fff; font-size: .8667em; z-index: 1; border-radius: 10px 0 0 0;}
                 ul li .event {background: #ed4c57;}
                 ul li .hot {background: #000;}
                 ul li .sold {display: block; position: absolute; top: -1px; left: -1px; right: -1px; z-index: 10; height: 245px; line-height: 245px; color: #fff; font-size: 1.6em; text-align: center; border-radius: 10px 10px 0 0; background-color: rgba(0,0,0,.7);}
+                ul li .sold p {line-height: inherit; font-size: inherit;}
                 ul li .img {width: 100%; border-radius: 10px 10px 0 0; background: #eee;}
                 ul li .img img {width: 100%; border-radius: 10px 10px 0 0;}
                 ul li .info {padding: 0 19px; border-top: 1px solid #e4e4e4; line-height: 1.3;}
@@ -98,7 +105,7 @@
             .box-view .img p {display: table-cell; height: 400px; vertical-align: middle; text-align: center;}
             .box-view .info {width: calc(100% - 480px); padding: 20px 0 25px 40px;}
             .box-view .info dl {width: 100%; display: flex; flex-wrap: wrap; margin: 0; border-bottom: 1px solid #d8d9db; padding-bottom: 15px;}
-            .box-view .info dt {width: 100px; padding-top: 15px; color: #222; font-size: 15px; vertical-align: top; height: 47px;}
+            .box-view .info dt {width: 15%; padding-top: 15px; color: #222; font-size: 15px; vertical-align: top; height: 47px;}
             .box-view .info dd {margin: 0; width: 85%; padding-top: 15px; color: #444; font-size: 15px; vertical-align: top; line-height: 1.5;}
             .box-view .info dd a {color: #01738b; text-decoration: underline;}
             .box-view .info dd span.gray {display: block; font-size: 14px; color: #ccc;}
@@ -173,5 +180,44 @@
     }
 }
 
+.quick_w {
+        position: relative;
+    .quick {
+        position: fixed; left: 50%; transform: translateX(560px); bottom: 20px;
+        img {width: inherit;}
+    }
+    .quick.active {bottom: 250px;}
+}
+.lock {overflow: hidden; position: relative;}
+.pop_w { 
+    width: 100%; height: 100vh; z-index: 99999; position: fixed; top: 0; left: 0; display: none;
+    .back {
+        width: 100%; height: 100%; background: rgba(0,0,0,.7); position: relative;
+        .pop {
+            width: 600px; height: 530px; background: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);
+            .pop_tit {
+                height: 45px; background: $mc; display: flex; justify-content: space-between;
+                h2 {font-size: 1.2em; color: #fff; padding: 10px 20px 0 20px;}
+                a {padding: 12px 15px;}
+                a img {width: inherit;}
+            }
+            .pop_cont {
+                width: 100%; height: 100%; padding: 20px 20px 0 20px;
+                p {text-align: center; color: $sc; font-size: 1.2em; padding-bottom: 10px; line-height: 1.5;}
+                .area {border-top: 1px solid #555; border-bottom: 1px solid #eaeaea;}
+                .area .region-w li {position: relative;}
+                .area .region-w li button {display: block; width: 150px; height: 44px; padding-left: 20px; text-align: left; border: 0; border-top: 1px solid #eaeaea; background-color: #f2f4f5;}
+                .area .region-w li.on button {background: #fff; color: $sc;}
+                .area .region-w li .con {overflow: hidden; overflow-y: scroll; position: absolute; left: 150px; top: 0; width: calc(100% - 150px); height: 352px; padding: 15px;}
+                .area .region-w li .con .theater-list {display: flex; flex-wrap: wrap;}
+                .area .region-w li .con .theater-list li {width: 50%; margin-bottom: 5px; padding-left: 12px;}
+                .area .region-w li .con .theater-list li::before {content: ''; display: block; position: absolute; top: 9px; left: 0; background-color: #503396; width: 3px; height: 3px;}
+            }
+        }
+    }
+    
+}
+
 .mt-20 {margin-top: 20px;}
 .mt-40 {margin-top: 40px;}
+.pb-100 {padding-bottom: 100px;}
