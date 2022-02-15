@@ -189,7 +189,7 @@
     .quick.active {bottom: 250px;}
 }
 .lock {overflow: hidden; position: relative;}
-.pop_w {
+.pop_w { 
     width: 100%; height: 100vh; z-index: 99999; position: fixed; top: 0; left: 0; display: none;
     .back {
         width: 100%; height: 100%; background: rgba(0,0,0,.7); position: relative;
