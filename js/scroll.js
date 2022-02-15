@@ -32,7 +32,7 @@ let pos = {y: 0, dy:0, state: true} // true : 스크롤 내릴때, false : 스�
 
         $(".quick_w a").click(function() {
             $('html, body').animate({
-                scrollTop : 0
+                scrollTop : 1
             }, 500);
             return false;
         });
