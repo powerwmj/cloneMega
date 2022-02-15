@@ -44,8 +44,6 @@ div, span, p, a, input, dl, dt, dd {
 }
 
 img, video, iframe {
-  width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   vertical-align: middle;
@@ -77,8 +75,7 @@ input:focus, button:focus {
 }
 
 .mwidth {
-  width: 100%;
-  max-width: 1140px;
+  width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
 }
