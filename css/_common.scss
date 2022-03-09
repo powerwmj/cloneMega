@@ -84,7 +84,7 @@ $fb: #f8f8fa; // 풋터 배경색
 // ================================================================================
 
 header{
-    border-bottom: 2px solid $sl;
+    border-bottom: 1px solid $mc;
     z-index: 9999;
     .head-menu{
         height: 80px;
@@ -92,6 +92,11 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        h1 a{
+            width: 140px; height: 47px;
+            background: url("../img/logo_black.png"), no-repeat;
+            display: block;
+        }
     }
     .m-margin{
         margin: 0 20px;
@@ -135,24 +140,32 @@ header{
         .my{
             width: 24px; height: 24px;
             padding: 2px;
+            p{
+                width: 18px; height: 21px;
+                background: url("../img/ico-mymega.png"), no-repeat;
+            }
         }
         .search{
             width: 24px; height: 24px;
             padding: 2px;
             margin-left: 10px;
             cursor: pointer;
+            p{
+                width: 18px; height: 18px;
+                background: url("../img/ico-search.png"), no-repeat;
+            }
         }
         .my.active{
             background: url('../img/ico-layer-close-g.png'), no-repeat;
             background-size: 24px 24px;
-            img{
+            p{
                 display: none;
             }
         }
         .search.active{
             background: url('../img/ico-layer-close-g.png'), no-repeat;
             background-size: 24px 24px;
-            img{
+            p{
                 display: none;
             }
         }

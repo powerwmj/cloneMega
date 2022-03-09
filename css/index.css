@@ -81,7 +81,7 @@ input:focus, button:focus {
 }
 
 header {
-  border-bottom: 2px solid #E2E2E2;
+  border-bottom: 1px solid #351F66;
   z-index: 9999;
 }
 
@@ -97,6 +97,13 @@ header .head-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .head-menu h1 a {
+  width: 140px;
+  height: 47px;
+  background: url("../img/logo_black.png"), no-repeat;
+  display: block;
 }
 
 header .m-margin {
@@ -162,6 +169,12 @@ header .menu-right .my {
   padding: 2px;
 }
 
+header .menu-right .my p {
+  width: 18px;
+  height: 21px;
+  background: url("../img/ico-mymega.png"), no-repeat;
+}
+
 header .menu-right .search {
   width: 24px;
   height: 24px;
@@ -170,12 +183,18 @@ header .menu-right .search {
   cursor: pointer;
 }
 
+header .menu-right .search p {
+  width: 18px;
+  height: 18px;
+  background: url("../img/ico-search.png"), no-repeat;
+}
+
 header .menu-right .my.active {
   background: url("../img/ico-layer-close-g.png"), no-repeat;
   background-size: 24px 24px;
 }
 
-header .menu-right .my.active img {
+header .menu-right .my.active p {
   display: none;
 }
 
@@ -184,7 +203,7 @@ header .menu-right .search.active {
   background-size: 24px 24px;
 }
 
-header .menu-right .search.active img {
+header .menu-right .search.active p {
   display: none;
 }
 
@@ -266,7 +285,136 @@ header .menu-right .search.active img {
   margin-left: 8px;
 }
 
+header {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header .head-menu h1 a {
+  background-image: url("../img/logo-white.png");
+}
+
+header .m-margin a {
+  color: #E2E2E2;
+}
+
+header .bugermenu span {
+  border-bottom: 2px solid #E2E2E2;
+}
+
+header .menu-right .my p {
+  background: url("../img/ico-mymega-white.png"), no-repeat;
+}
+
+header .menu-right .search p {
+  background: url("../img/ico-search-white.png"), no-repeat;
+}
+
 main {
   position: relative;
+}
+
+main .box-office {
+  width: 100vw;
+  height: 90vh;
+}
+
+main .box-office .bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: -80px;
+  z-index: -500;
+}
+
+main .box-office .bg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background: -webkit-gradient(linear, left top, right top, from(#553f05), color-stop(50%, rgba(23, 17, 1, 0)), to(#553f05));
+  background: linear-gradient(to right, #553f05 0%, rgba(23, 17, 1, 0) 50%, #553f05 100%);
+}
+
+main .box-office .bg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(3, 1, 21, 0.7);
+}
+
+main .box-office .bg .bg-pattern {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background: url("../img/main/bg-movie-detail-pattern.png") repeat 0 0;
+}
+
+main .box-office .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}
+
+main .box-office .contents {
+  text-align: center;
+  color: #fff;
+}
+
+main .box-office .contents-title {
+  padding: 80px 0 0;
+  position: relative;
+}
+
+main .box-office .contents-title h2 {
+  padding-bottom: 5px;
+  display: inline-block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.0667em;
+}
+
+main .box-office .contents-title p {
+  color: #E2E2E2;
+  line-height: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main .box-office .box-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .box-office .mb-search {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .box-office .mb-search p input, main .box-office .mb-search p button {
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */
