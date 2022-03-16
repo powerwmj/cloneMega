@@ -17,7 +17,7 @@ let DB = async function(){
     let imgUrl = function (Nm, i){
         // 프록시우회 https://cors-anywhere.herokuapp.com/
         let search = Nm;
-        fetch (`https://cors-anywhere.herokuapp.com/https://openapi.naver.com/v1/search/movie.json?query=${search}&display=1`,{
+        fetch (`https://openapi.naver.com/v1/search/movie.json?query=${search}&display=1`,{
             method: "GET",
             headers: {
                 "X-Naver-Client-Id": "zCe1y3Xuohsh1dHy9sB8",
