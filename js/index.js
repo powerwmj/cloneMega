@@ -45,7 +45,7 @@ let DB = async function(){
 
         return today;
     }
-    await fetch (`http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=cb159847ce3eaae2e2d1f0b434c70fff&targetDt=${date()}`)
+    await fetch (`https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=cb159847ce3eaae2e2d1f0b434c70fff&targetDt=${date()}`)
     .then((response) => response.json())
     .then((data) => {
         for(let v of data.boxOfficeResult.dailyBoxOfficeList){
