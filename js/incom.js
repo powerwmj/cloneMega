@@ -35,9 +35,17 @@ let afterHead = function(){
 
 $('header').load('incom.html header >div', afterHead);
 $('footer').load('incom.html footer >div');
+
 //fetch 이용하기
 
-
-
+// fetch("../incom.html")
+// .then(function(response) {
+//     return response.text();
+// })
+// .then(function(string) {
+//     // elem.innerHTML = string;
+//     console.log(string.value)
+// })
+// .catch((error) => console.log("error:", error));
 
 

@@ -83,7 +83,7 @@ input:focus, button:focus {
 }
 
 header {
-  border-bottom: 2px solid #E2E2E2;
+  border-bottom: 1px solid #351F66;
   z-index: 9999;
 }
 
@@ -99,6 +99,13 @@ header .head-menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .head-menu h1 a {
+  width: 140px;
+  height: 47px;
+  background: url("../img/logo_black.png"), no-repeat;
+  display: block;
 }
 
 header .m-margin {
@@ -164,6 +171,12 @@ header .menu-right .my {
   padding: 2px;
 }
 
+header .menu-right .my p {
+  width: 18px;
+  height: 21px;
+  background: url("../img/ico-mymega.png"), no-repeat;
+}
+
 header .menu-right .search {
   width: 24px;
   height: 24px;
@@ -172,12 +185,18 @@ header .menu-right .search {
   cursor: pointer;
 }
 
+header .menu-right .search p {
+  width: 18px;
+  height: 18px;
+  background: url("../img/ico-search.png"), no-repeat;
+}
+
 header .menu-right .my.active {
   background: url("../img/ico-layer-close-g.png"), no-repeat;
   background-size: 24px 24px;
 }
 
-header .menu-right .my.active img {
+header .menu-right .my.active p {
   display: none;
 }
 
@@ -186,7 +205,7 @@ header .menu-right .search.active {
   background-size: 24px 24px;
 }
 
-header .menu-right .search.active img {
+header .menu-right .search.active p {
   display: none;
 }
 
