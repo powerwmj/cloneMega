@@ -49,6 +49,7 @@ main{position: relative;}
             justify-content: space-between;
             align-items: center;
         }
+        .onair-condition p span{font-size: 0px;}
         .onair-condition p input{display:none;}
         .onair-condition p label{
             width:30px; height:15px;
@@ -119,11 +120,45 @@ main{position: relative;}
             background: #fff url('../img/movie/ico-search.png') no-repeat center;
             opacity: 0.7;
         }
+
+        //load_more_box
+        .load_more_box{
+            position: relative;
+            padding: 40px 0 0 0;
+            .show_img{
+                display: block;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                height: 40px;
+                border: 0;
+                border-bottom: 1px solid #eaeaea;
+                background-color: transparent;
+                color: #666;}
+                .load_more_img{
+                    overflow: hidden;
+                    display: inline-block;
+                    margin: -1px 0 0 0;
+                    padding: 0;
+                    font-size: 0;
+                    line-height: 0;
+                    vertical-align: middle;
+                    width: 12px;
+                    height: 7px;
+                    background-image: url('../img/movie/ico-btn-more-arr.png');
+                    background-position: 0 0;
+                    background-repeat: no-repeat;
+                }
+        }
+        .load_more_box.active{display: none;}
+
         //movie-list
+        .movie-list{margin-bottom: 200px;}
         .movie-list ul{
             display: flex;
             flex-wrap: wrap;
-            margin-left:-60px;}
+            margin-left:-60px;
+        }
         .movie-list ul li:nth-child(4n)~li{
             margin-top: 60px;
         }
@@ -137,6 +172,7 @@ main{position: relative;}
             padding: 0;
             background-color: #fff;
             .movie-list-info img{width: 100%;}
+
 
             //title-text
             .tit-area{
@@ -167,6 +203,9 @@ main{position: relative;}
                 }
                 .age-15{
                     background-image: url('../img/movie/txt-age-15.png');
+                }
+                .age-19{
+                    background-image: url('../img/movie/txt-age-19.png');
                 }
 
                 .tit{
@@ -370,10 +409,10 @@ main{position: relative;}
                         display: inline-block;
                         vertical-align: middle;
                         line-height: 36px;
-                        .tit{
+                        .tit_sub{
                             display: block;
                             float: left;
-                            margin: 0 15px 0 0;
+                            margin: 8px 15px 0 0;
                             font-size: .9em;
                         }
                         .number{
