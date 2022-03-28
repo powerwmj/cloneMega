@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/store_payment.css">
+    
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
-    <title>Document</title>
+    <title>스토어 결제</title>
+    <!-- 파비콘 -->
+    <link rel="shirtcut icon" href="./img/favicon.ico">    
+    <link rel="stylesheet" href="css/store_payment.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <script defer src="./js/incom.js"></script>
+    <script defer src="./js/store_payment.js"></script>
+    
 </head>
 <body>
-    <div class="container">
+    <main>
         <div class="pagelocation">
             <div class="inner">
                 <div class="location">
@@ -19,6 +29,8 @@
                 </div>
             </div>
         </div>
+    <div class="container mwidth">
+        
         <div class="contents">
             <div class="inner">
                 <!-- storepayment -->
@@ -147,6 +159,33 @@
                      <div id="giftAcptPsnList" class="useraddlist"></div>
                  </div>
                  <!-- 선물하기 창 종료 -->
+                 <!-- 포인트 영역시작 -->
+
+                 <h3 class="tit mt40"  style="display:none"> 멤버쉽 포인트</h3>
+                 <div class="pointarea" style="display:none">
+                     <div class="rt itm">
+                         <div class="tit">
+                             신 포인트
+                             <span id="span_nw_point">0P</span>
+                         </div>
+                         <div class="intt">
+                             <input id="inputNewPoint" class="input-text" type="tel" name="inputNewPoint" placeholder="최대 가능 포인트 11,000P">
+                             <label for="inputNewPoint" onclick="">
+                                 모두사용
+                             </label> 
+                         </div>
+                     </div>
+                     <ul class="list">
+                         <li>
+                             사용하고자 하시는 메가박스 포인트 별 1000P 이상 보유 시에만 10P 단위로 사용 가능합니다. 
+                         </li>
+                         <li>
+                             상품에 따라사용가능 포인트는 제한이 있을 수 있습니다.
+                         </li>
+                     </ul>
+                 </div>
+
+                 <!-- 포인트 영역종료 -->
                  <!-- 결제수단 시작 -->
                  <h3 class="tit mt40">
                      최종결제
@@ -194,28 +233,31 @@
                         <div class="inbox">
                             <p class="txt">결제수단 선택</p>
                             <div class="cell">
-                                <input id="radio_choice01" type="radio" name="radio_choice" value="credit">
+                                <input id="radio_choice01" type="radio" name="radio_choice" value='credit'
+                                />
                                 <label for="radio_choice01">신용/체크카드</label>
                             </div>
                             <div class="cell">
-                                <input id="radio_choice03" type="radio" name="radio_choice" value="kakaopay">
+                                <input  id="radio_choice03" type="radio" name="radio_choice" value='kakaopay'
+                                />
                                 <label for="radio_choice03">카카오페이</label>
                             </div>
                             <div class="cell">
-                                <input id="radio_choice04" type="radio" name="radio_choice" value="payco">
+                                <input id="radio_choice04" type="radio" name="radio_choice" value='payco'
+                                />
                                 <label for="radio_choice04">페이코</label>
                             </div>
 
                         </div>
                     </div>
                     <!-- 카드선택 -->
-                    <div class="choice ty2 sel-payment-card">
+                    <div class="choice ty2 sel-payment-card" id="selpaymentcard">
                         <div class="inbox">
                             <p class="txt">
                                 카드사 선택
                             </p>
                             <div class="cell">
-                                <select id="card_select" class="x-small selpiker" title="카드사선택">
+                                <select id="card_select" class="x-small selpiker" title="카드사선택" onchange="selectCard()">
                                     <option value="00" selected="">
                                         카드선택
                                     </option>
@@ -230,26 +272,86 @@
                                     <option value="09">SC제일은행 비씨카드</option>
                                 </select>
                             </div>
+                          
                             <!-- 카드선택시 결제방법 작업필요 -->
-                            <div class="cell p10"></div>
-                            <div class="cell"></div>
-                            <!--결제수단별 알림문구  작업필요-->
-
-
+                            <div class="cell p10 blank">
+                                <input class="app_card" id="app_card" type="radio" name="rdo_card_select" value="01" >
+                                <label class="lab_app_card"
+                                id="lab_app_card" for="app_card">
+                                    ISP
+                                </label>
+                            </div>
+                            <div class="cell">
+                                <input class="general_card"
+                                id="general_card" type="radio" name="rdo_card_select" value="00">
+                                <label class="lab_general_card" id="lab_general_card" for="general_card">
+                                     일반결제
+                                </label>
+                            </div>
+                            
+                            
                         </div>
                     </div>
+                    <!--결제수단별 알림문구  작업필요-->
+                    <div class="select-kakao-info">
+                        <ul class="dash-list">
+                            <li>
+                                즉시할인신용카드 적용이 불가합니다.
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="select-payco-info">
+                        <ul class="dash-list">
+                            <li>
+                                즉시할인신용카드 적용이 불가합니다.<br>
+                                페이코 포인트 결제 시 결제 금액의 2% 추가적립 됩니다.
+                            </li>
+                        </ul>
+                    </div> 
                  </div>
+                    <!-- 주의사항 -->
+                   <dl id="terms" class="term-list" >
+                    <dt>
+                        <span class="bg-chk small">
+                            <input id="agree" type="checkbox">
+                            <label for="agree">
+                                결제대행 서비스 약관 필수 동의
+                                <!-- 클릭시 background-position: -28px 0; -->
+                            </label>
+                        </span>
+                    </dt>
+                    <dd class="tit">
+                        전자금융거래 이용약관
+                        <!-- 전자금융거래 이용약관 -->
+                        <a href="#">내용보기</a>
+                    </dd>
+                    <dd class="tit">
+                        개인정보 수집 및 이용 안내
+                        <!-- 개인정보 수집 및 이용 안내 -->
+                        <a href="#">내용보기</a>
+                    </dd>
+                    <dd class="tit">
+                        개인정보 제공 및 위탁 안내
+                        <!-- 개인정보 제공 및 위탁 안내 -->
+
+                        <a href="#">내용보기</a>
+                    </dd>
+                </dl>
+                     <!-- 주의사항 -->
                  <div class="btn-group pt40">
                      <a id="btn_store_back" class="button large w170px" href="" title="취소">취소</a>
                      <a id="btn_store_pay_adapter" class="button purple large w170px btn_modal_open" href="#" title="결제">결제</a>
 
                  </div>
+
+              
+
             </div>
 
         </div>
     </div>
 </div>
 
-    
+</main>
 </body>
 </html>
