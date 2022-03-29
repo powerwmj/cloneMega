@@ -189,7 +189,11 @@ main{
         top: 515px; left: 0;
         z-index: -1;
     }
-    .tit {display: flex;}
+    .tit {
+        display: flex;
+        a {display: inline-block; position: relative; font-size: 0;}
+        a::before {content: ''; background: url('../img/main/btn-more-cross-purple.png') no-repeat; width: 16px; height: 16px; position: absolute; top: 16px; right: 16px;}
+    }
     .b-box{
         display: flex; align-items: end;
         .box1{

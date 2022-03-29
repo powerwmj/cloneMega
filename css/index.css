@@ -567,6 +567,22 @@ main h3 {
   display: flex;
 }
 
+.benefit .tit a {
+  display: inline-block;
+  position: relative;
+  font-size: 0;
+}
+
+.benefit .tit a::before {
+  content: '';
+  background: url("../img/main/btn-more-cross-purple.png") no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
 .benefit .b-box {
   display: -webkit-box;
   display: -ms-flexbox;
