@@ -708,6 +708,7 @@ main h3 {
 .info div p {
   width: 170px;
   height: 170px;
+  position: relative;
   overflow: hidden;
   border-radius: 5px;
   -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
@@ -721,5 +722,22 @@ main h3 {
 .info div p:hover img {
   -webkit-transform: translateY(-170px);
           transform: translateY(-170px);
+}
+
+.info div p:nth-of-type(1)::after {
+  position: absolute;
+  content: "NEW";
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 22px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 5px;
+  background: #027B94;
+  text-indent: 0;
+  display: block;
 }
 /*# sourceMappingURL=index.css.map */
