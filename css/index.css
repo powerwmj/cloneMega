@@ -547,6 +547,7 @@ main h3 {
 
 .benefit {
   position: relative;
+  height: 845px;
 }
 
 .benefit::before {
@@ -555,15 +556,24 @@ main h3 {
   height: 330px;
   background-color: #351F66;
   position: absolute;
-  bottom: 0;
+  top: 515px;
   left: 0;
   z-index: -1;
+}
+
+.benefit .tit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .benefit .b-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .benefit .b-box .box1 .box1-1 p:nth-of-type(1) {
@@ -603,17 +613,39 @@ main h3 {
   display: flex;
 }
 
+.benefit .b-box .box1 .box1-2 p img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.benefit .b-box .box1 .box1-2 p:nth-of-type(1) {
+  width: 441px;
+}
+
+.benefit .b-box .box1 .box1-2 p:nth-of-type(2) {
+  width: 204px;
+  margin-left: 20px;
+}
+
+.benefit .b-box .box2 {
+  width: 415px;
+}
+
+.benefit .b-box .box2 img {
+  border-radius: 5px;
+}
+
 .benefit .b-items {
   height: 132px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .benefit .b-items p {
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,15 +653,30 @@ main h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
 }
 
 .benefit .b-items p img {
-  width: 100%;
-  height: 60px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 45px;
 }
 
 .benefit .b-items p span {
   display: inline-block;
+  position: absolute;
+  color: #fff;
+  padding: 60px 0 0 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
 }
 
 .info div {
@@ -639,15 +686,24 @@ main h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .info div p {
   width: 170px;
   height: 170px;
   overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .info div p img {
   width: 100%;
+}
+
+.info div p:hover img {
+  -webkit-transform: translateY(-170px);
+          transform: translateY(-170px);
 }
 /*# sourceMappingURL=index.css.map */
