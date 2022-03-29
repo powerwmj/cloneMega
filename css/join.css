@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'NanumBarunGothic', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+*::before, *::after {
+  border-spacing: 0;
+}
+
+html, body, header, main, footer,
+h1, h2, h3, h4, h5, h6, figure,
+div, span, p, a, input, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+img, video, iframe {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, button {
+  border: none;
+  background: none;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+.mwidth {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  border-bottom: 1px solid #351F66;
+  z-index: 9999;
+}
+
+header .head-menu {
+  height: 80px;
+  color: #444444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .head-menu h1 a {
+  width: 140px;
+  height: 47px;
+  background: url("../img/logo_black.png"), no-repeat;
+  display: block;
+}
+
+header .m-margin {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+header .menu-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .bugermenu p {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+header .bugermenu span {
+  width: 100%;
+  border-bottom: 2px solid #444444;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+header .bugermenu span:nth-of-type(1) {
+  top: 12%;
+}
+
+header .bugermenu span:nth-of-type(3) {
+  top: 88%;
+}
+
+header .bugermenu p.active {
+  background: url("../img/ico-layer-close-g.png"), no-repeat;
+  background-size: 24px 24px;
+}
+
+header .bugermenu p.active span {
+  display: none;
+}
+
+header .menu-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .menu-right .my {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+}
+
+header .menu-right .my p {
+  width: 18px;
+  height: 21px;
+  background: url("../img/ico-mymega.png"), no-repeat;
+}
+
+header .menu-right .search {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header .menu-right .search p {
+  width: 18px;
+  height: 18px;
+  background: url("../img/ico-search.png"), no-repeat;
+}
+
+header .menu-right .my.active {
+  background: url("../img/ico-layer-close-g.png"), no-repeat;
+  background-size: 24px 24px;
+}
+
+header .menu-right .my.active p {
+  display: none;
+}
+
+header .menu-right .search.active {
+  background: url("../img/ico-layer-close-g.png"), no-repeat;
+  background-size: 24px 24px;
+}
+
+header .menu-right .search.active p {
+  display: none;
+}
+
+.footer-menu {
+  width: 100%;
+  height: 200px;
+  background-color: #f8f8fa;
+  color: #444444;
+  z-index: 999;
+}
+
+.footer-menu .f-1 {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-menu .f-1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-menu .f-1 ul li {
+  margin-right: 14px;
+  font-size: 0.8em;
+}
+
+.footer-menu .f-1 ul b {
+  font-size: 1em;
+}
+
+.footer-menu .f-1 button {
+  padding: 4px 18px;
+  font-size: 0.8em;
+  border: 1px solid #E2E2E2;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.footer-menu .f-1 button img {
+  width: 12px;
+  margin-right: 4px;
+}
+
+.footer-menu .f-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-menu .f2-1 {
+  width: 150px;
+  margin-top: 4px;
+}
+
+.footer-menu .f2-2 span {
+  font-size: .8em;
+}
+
+.footer-menu .f2-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-menu .f2-3 span {
+  margin-top: 4px;
+  margin-left: 8px;
+}
+/*# sourceMappingURL=join.css.map */
