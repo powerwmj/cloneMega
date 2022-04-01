@@ -16,7 +16,7 @@
         }
         .sns {
             position: absolute; top: 12px; right: 0;
-            a {display: block; height: 22px; color: #666; font-size: 15px; line-height: 22px;}
+            a {display: block; height: 22px; color: #666; font-size: 15px; line-height: 22px; cursor: pointer;}
             a::after {content: url('../img/store/sns_link.png'); display: inline-block; padding-left: 10px; vertical-align: sub;}
             .sns-share {display: none; position: absolute; right: 0; top: 42px; z-index: 55; width: 360px; height: 110px; padding: 20px 0 0 0; border: 1px solid #d8d9db; border-radius: 5px; background-color: #fff;}
             .sns-share::before {content: ''; position: absolute; right: 34px; top: -12px; display: block; width: 22px; height: 12px; background: url('../img/store/bg-tooltip-arr-top-script.png') no-repeat 0 0;}
@@ -70,10 +70,11 @@
                 .more a::after {content: url('../img/store/ico-arr-right-gray.png'); display: inline-block; padding-left: 10px;}
             }
             .store-list {
-                ul {display: flex; justify-content: flex-start;}
+                ul {display: flex; justify-content: flex-start; flex-wrap: wrap;}
                 ul li {width: 245px; border: 1px solid #e4e4e4; border-radius: 10px; margin-right: 40px;}
                 ul li:hover {border: 1px solid #503396;}
-                ul li:nth-of-type(4) {margin-right: 0;}
+                ul li:nth-of-type(4n) {margin-right: 0;}
+                ul li:nth-child(4)~li {margin-top: 40px;}
                 ul li a {position: relative; height: inherit; display: block; padding-bottom: 10px;}
                 ul li .label {position: absolute; top: 0; left: 0; overflow: hidden; height: 24px; padding: 0 10px; line-height: 27px; color: #fff; font-size: .8667em; z-index: 1; border-radius: 10px 0 0 0;}
                 ul li .event {background: #ed4c57;}
@@ -94,6 +95,7 @@
                 ul li .info .price .ea {position: absolute; right: 0; bottom: 4px; color: #666;}
             }
         }
+        .product.mt30 {margin-top: 30px;}
         //view
         .store-view {
             h2 {font-size: 1.8666em; padding-bottom: 5px; font-weight: 400; color: #222;}
@@ -107,7 +109,7 @@
             .box-view .info dl {width: 100%; display: flex; flex-wrap: wrap; margin: 0; border-bottom: 1px solid #d8d9db; padding-bottom: 15px;}
             .box-view .info dt {width: 15%; padding-top: 15px; color: #222; font-size: 15px; vertical-align: top; height: 47px;}
             .box-view .info dd {margin: 0; width: 85%; padding-top: 15px; color: #444; font-size: 15px; vertical-align: top; line-height: 1.5;}
-            .box-view .info dd a {color: #01738b; text-decoration: underline;}
+            .box-view .info dd a {color: #01738b; text-decoration: underline; cursor: pointer;}
             .box-view .info dd span.gray {display: block; font-size: 14px; color: #ccc;}
             .box-view .info dd span.deepgreen {color: #01738b;}
             .box-view .info .price {padding: 25px 0; display: flex; border-bottom: 1px solid #d8d9db;}
@@ -221,3 +223,4 @@
 .mt-20 {margin-top: 20px;}
 .mt-40 {margin-top: 40px;}
 .pb-100 {padding-bottom: 100px;}
+.none {display: none;}

@@ -1,0 +1,136 @@
+{
+    "store": [
+      
+      {
+        "num": "1",
+        "category": "ticket",
+        "thumb": "img/store/kscZOkfo2ilNidOOAiljvbZZJzAaA01k_280.png",
+        "title": "[설날] 혼영 패키지",
+        "summary": "일반관람권 1매 + 팝콘R 1개 + 탄산R 1개",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "19,000",
+        "price_sale": "13,000",
+        "count": "1,977",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      },
+      {
+        "num": "2",
+        "category": "ticket",
+        "thumb": "img/store/WshLRhwTlHhyBfyWuEXN6gnL01eE8M4a_280.jpg",
+        "title": "[설날] 연인 패키지",
+        "summary": "일반관람권 2매 +  탄산L 2개",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "30,000",
+        "price_sale": "20,000",
+        "count": "1,977",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      },
+      {
+        "num": "3",
+        "category": "ticket",
+        "thumb": "img/store/91YlkF3IWebs2H64d1KWjdYrb2WsJmxF_280.png",
+        "title": "[설날] 가족 패키지",
+        "summary": "일반관람권 3매 + 팝콘L 1개 +  탄산R 2개",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "45,000",
+        "price_sale": "31,000",
+        "count": "1,977",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      },
+      {
+        "num": "4",
+        "category": "ticket",
+        "thumb": "img/store/giNIvTmwvfjk5a0iigooBgSZiFMxrcpO_280.png",
+        "title": "코카-콜라 굿즈 패키지1",
+        "summary": "관람권 4매 + 콜라(R)2 +  코카-콜라 폴딩테이블",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "",
+        "price_sale": "44,000",
+        "count": "1,977",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      },
+      {
+        "num": "5",
+        "category": "goods",
+        "thumb": "img/store/e57rVk8dpnWK3i5Ylsz3EbqlvAK9QrjH_280.png",
+        "title": "러브콤보",
+        "summary": "팝콘(L)1 + 탄산음료(R)2",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "",
+        "price_sale": "9,000",
+        "count": "",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      },
+      {
+        "num": "6",
+        "category": "goods",
+        "thumb": "img/store/gi11s9ikY3chK4T9trUPyk8aKcHax7Rm_280.png",
+        "title": "더블콤보",
+        "summary": "팝콘(R)2 + 탄산음료(R)2",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "",
+        "price_sale": "9,000",
+        "count": "",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      },
+      {
+        "num": "7",
+        "category": "point",
+        "thumb": "img/store/vlgU4mGlQoclxzwDy9serVinpDE8lgJm_280.png",
+        "title": "[특가 2차] 평일 일반 2D 예매권 _ 1월 포인트몰",
+        "summary": "27일 낮12시 오픈 - 평일 일반 2D 영화 예매권 1매 (월~금, 공휴일 제외)",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "",
+        "price_sale": "7,000",
+        "count": "0",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      },
+      {
+        "num": "8",
+        "category": "point",
+        "thumb": "img/store/hMK6TYjKsStO3W8lNtFNrQU7aOwWX1XU_280.png",
+        "title": "[특가 2차] 콜라 R _ 1월 포인트몰",
+        "summary": "28일 낮12시 오픈 -콜라 R 교환권",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "",
+        "price_sale": "1,500",
+        "count": "600",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      },
+      {
+        "num": "9",
+        "category": "point",
+        "thumb": "img/store/867rl6GwlxsXtlMbQ04Cu41K0zxs4pEh_280.png",
+        "title": "오리지널 팝콘 L _ 1월 포인트몰",
+        "summary": "오리지널 팝콘 L 교환권",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "",
+        "price_sale": "4,000",
+        "count": "",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      },
+      {
+        "num": "10",
+        "category": "point",
+        "thumb": "img/store/q0fWCUksj7FNW2ApYPLSEsSlertV3VZ2_280.png",
+        "title": "콤보 2천원 할인 쿠폰 _ 1월 포인트몰",
+        "summary": "일반 콤보 2천원 할인 쿠폰",
+        "date": "2022.01.26 ~ 2022.02.04",
+        "price_org": "",
+        "price_sale": "1,000",
+        "count": "",
+        "validity": "구매일로부터 3개월 이내 사용 가능",
+        "comment": "구매일로부터 10일 이내 취소 가능하며, 부분취소는 불가능합니다."
+      }
+    ]
+  }
+  

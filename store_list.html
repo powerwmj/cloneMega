@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/store.css">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
      <!-- 오픈그래프 -->
-     <meta property="og:title" content="Main Page"> 
+     <meta property="og:title" content="Store Page"> 
      <meta property="og:url" content=""> 
      <meta property="og:type" content="website"> 
      <meta property="og:image" content=""> 
@@ -20,6 +20,7 @@
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script defer src="js/incom.js"></script>
     <script defer src="js/scroll.js"></script>
+    <script defer src="js/store.js"></script>
 </head>
 <body>
     <main class="container">
@@ -37,10 +38,10 @@
                 <!-- tab -->
                 <div class="tab">
                     <ul>
-                        <li class="on"><a href="#">새로운 상품</a></li>
-                        <li><a href="#">메가티켓</a></li>
-                        <li><a href="#">팝콘/음료/굿즈</a></li>
-                        <li><a href="#">포인트몰</a></li>
+                        <li data-type="new" class="on"><a href="#">새로운 상품</a></li>
+                        <li data-type="ticket"><a href="#">메가티켓</a></li>
+                        <li data-type="goods"><a href="#">팝콘/음료/굿즈</a></li>
+                        <li data-type="point"><a href="#">포인트몰</a></li>
                     </ul>
                 </div>
                 <!-- tab : e -->
@@ -72,8 +73,9 @@
                             <a href="#">더보기</a>
                         </div>
                     </div>
-                    <div class="store-list">
+                    <div class="store-list ticket">
                         <ul>
+                            
                             <li>
                                 <a href="store_view.html" class="list-link" title="[설날] 혼영 패키지">
                                     <div class="label event">EVENT</div>
@@ -176,7 +178,7 @@
                             <a href="#">더보기</a>
                         </div>
                     </div>
-                    <div class="store-list">
+                    <div class="store-list goods">
                         <ul>
                             <li>
                                 <a href="#" class="list-link" title="러브콤보">
@@ -235,7 +237,7 @@
                             <a href="#">더보기</a>
                         </div>
                     </div>
-                    <div class="store-list">
+                    <div class="store-list point">
                         <ul>
                             <li>
                                 <a href="#" class="list-link" title="[특가 2차] 평일 일반 2D 예매권 _ 1월 포인트몰 ">

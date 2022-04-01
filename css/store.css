@@ -347,6 +347,7 @@ header .menu-right .search.active p {
   color: #666;
   font-size: 15px;
   line-height: 22px;
+  cursor: pointer;
 }
 
 .container .gnb .sns a::after {
@@ -598,6 +599,8 @@ header .menu-right .search.active p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .content_w .product .store-list ul li {
@@ -611,8 +614,12 @@ header .menu-right .search.active p {
   border: 1px solid #503396;
 }
 
-.container .content_w .product .store-list ul li:nth-of-type(4) {
+.container .content_w .product .store-list ul li:nth-of-type(4n) {
   margin-right: 0;
+}
+
+.container .content_w .product .store-list ul li:nth-child(4) ~ li {
+  margin-top: 40px;
 }
 
 .container .content_w .product .store-list ul li a {
@@ -738,6 +745,10 @@ header .menu-right .search.active p {
   color: #666;
 }
 
+.container .content_w .product.mt30 {
+  margin-top: 30px;
+}
+
 .container .content_w .store-view h2 {
   font-size: 1.8666em;
   padding-bottom: 5px;
@@ -835,6 +846,7 @@ header .menu-right .search.active p {
 .container .content_w .store-view .box-view .info dd a {
   color: #01738b;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .container .content_w .store-view .box-view .info dd span.gray {
@@ -1354,5 +1366,9 @@ header .menu-right .search.active p {
 
 .pb-100 {
   padding-bottom: 100px;
+}
+
+.none {
+  display: none;
 }
 /*# sourceMappingURL=store.css.map */
